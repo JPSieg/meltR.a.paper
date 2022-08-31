@@ -1,0 +1,3 @@
+﻿Method,dH.kcal.mol,SE.dH.kcal.mol,dS.cal.molK,SE.dS.cal.molK,dG.kcal.mol,SE.dG.kcal.mol,Tm.degC,SE.Tm.degC
+1 individual fits,-67.02,3.025,-184.51,9.497,-9.80,0.087,52.9,
+2 Tm versus ln[Ct],-65.85,1.448,-180.82,4.495,-9.77,0.055,53.0,

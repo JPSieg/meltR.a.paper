@@ -141,3 +141,33 @@ for (i in 1:nrow(df.index)){
 df.Meltwin.summary = bind_rows(list.df)
 
 usethis::use_data(df.Meltwin.summary, overwrite = T)
+
+####Read in Adams data####
+
+df.index = read.csv("data-raw/Adams_data_index.csv")
+
+df.index$File = gsub("MirandaAData", "", gsub("\\", "/", df.index$File, fixed = TRUE), fixed = TRUE)
+
+df.index$File  = paste("data-raw", df.index$File, sep = "")
+
+list.df = {}
+
+for (i in 1:nrow(df.index)){
+  df = read.csv(df.index$File[i]) %>% select(Sample, Pathlength, Temperature, Absorbance)
+  df$Experiment = df.index$Experiment[i]
+  df$RNA = df.index$RNA[i]
+  df$Buffer = df.index$Buffer[i]
+  df$File = df.index$File[i]
+  df$Blank = df.index$Blank[i]
+  df$Wavelength = df.index$Wavelength[i]
+  df$Sample = paste("Sample", df$Sample)
+  Samples = paste("Sample", unique(df$Sample))
+  blank = unique(df$Blank)
+  list.df.samples = {}
+  for (j in Samples){
+    df.blank = df %>% filter(Sample == blank)
+    df.A = df %>% filter(Sample == j)
+    df.A$Absorbance = df.A$Absorbance - df.A$Pathlength*df.blank$Absorbance/df.blank$Pathlength
+    
+  }
+}
