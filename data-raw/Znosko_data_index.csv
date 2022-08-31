@@ -1,0 +1,13 @@
+Experiment,RNA,Buffer,File,Cell,Blank,Pathlength,Wavelength,Source
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.0,CROWD_DP1/CROWD_DP1_Run1.csv,Cell 1,Cell 1,1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.1,CROWD_DP1/CROWD_DP1_Run1.csv,Cell 2,Cell 1,0.1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.2,CROWD_DP1/CROWD_DP1_Run1.csv,Cell 3,Cell 1,0.5,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.3,CROWD_DP1/CROWD_DP1_Run1.csv,Cell 4,Cell 1,1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.4,CROWD_DP1/CROWD_DP1_Run2.csv,Cell 1,Cell 1,1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.5,CROWD_DP1/CROWD_DP1_Run2.csv,Cell 2,Cell 1,0.1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.6,CROWD_DP1/CROWD_DP1_Run2.csv,Cell 3,Cell 1,0.5,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.7,CROWD_DP1/CROWD_DP1_Run2.csv,Cell 4,Cell 1,1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.8,CROWD_DP1/CROWD_DP1_Run3.csv,Cell 1,Cell 1,1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.9,CROWD_DP1/CROWD_DP1_Run3.csv,Cell 2,Cell 1,0.1,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.10,CROWD_DP1/CROWD_DP1_Run3.csv,Cell 3,Cell 1,0.5,280,"Nucleic acids research 2019 V47, N7."
+CROWD DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.11,CROWD_DP1/CROWD_DP1_Run3.csv,Cell 4,Cell 1,1,280,"Nucleic acids research 2019 V47, N7."

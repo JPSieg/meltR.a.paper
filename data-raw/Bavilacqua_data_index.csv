@@ -1,0 +1,7 @@
+Experiment,RNA,Buffer,File,Blank,Wavelength,Source
+Helix A,CGAAAGGU/ACCUUUCG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_A/js3041_HelixA_No_label.csv,1,260,This work.
+Helix A labeled,CGAAAGGU/ACCUUUCG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_A_labeled/js3042_HelixA_labeled.csv,None,260,This work.
+Helix C,CUGAGUC/GACUCAG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_C/js3041_HelixC_No_label.csv,2,260,This work.
+Helix C labeled,CUGAGUC/GACUCAG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_C_labeled/js3042_HelixC_labeled.csv,None,260,This work.
+Helix D,CGUUGC/GCAACG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_D/js3041_HelixD_No_label.csv,3,260,This work.
+Helix D labeled,CGUUGC/GCAACG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_D_labeled/js3042_HelixD_labeled.csv,None,260,This work.

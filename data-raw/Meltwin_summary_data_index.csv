@@ -1,0 +1,8 @@
+Experiment,RNA,Buffer,File,Molecular_model,Wavelength,Source
+Helix A,CGAAAGGU/ACCUUUCG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_A/Meltwin_summary.csv,Heteroduplex,260,This work.
+Helix A labeled,CGAAAGGU/ACCUUUCG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_A_labeled/Meltwin_summary.csv,Heteroduplex,260,This work.
+Helix C,CUGAGUC/GACUCAG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_C/Meltwin_summary.csv,Heteroduplex,260,This work.
+Helix C labeled,CUGAGUC/GACUCAG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_C_labeled/Meltwin_summary.csv,Heteroduplex,260,This work.
+Helix D,CGUUGC/GCAACG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_D/Meltwin_summary.csv,Heteroduplex,260,This work.
+Helix D labeled,CGUUGC/GCAACG,1 M NaCl 20 mM sodium MOPS 0.01 mM sodium EDTA pH 7.0,Helix_D_labeled/Meltwin_summary.csv,Heteroduplex,260,This work.
+CROWD_DP1,CGCGCG,20% PEG 200 1 M NaCl 20 mM sodium cacodylate 0.5 mM sodium EDTA pH 7.11,CROWD_DP1/Meltwin_summary.csv,Homoduplex,280,"Nucleic acids research 2019 V47, N7."
