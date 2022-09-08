@@ -1,6 +1,0 @@
-Program,Method,dH.kcal.mol,SE.dH.kcal.mol,dS.kcal.molK,SE.dS.kcal.molK,dG.kcal.mol,SE.dG.kcal.mol,Tm.degC,SE.Tm.degC
-Meltwin,1 individual fits,-55.54,1.282,-153.67,4.309,-7.88,0.195,49.8,
-Meltwin,2 Tm versus ln[Ct],-53.41,4.85,-147.08,15.045,-7.79,0.224,49.8,
-MeltR,1 individual fits,-55.61,1.17,-155.06,3.99,-7.52,0.18,47.6,1.6
-MeltR,2 Tm versus ln[Ct],-59.96,5.75,-168.96,17.9,-7.56,0.21,47.0,6.7
-MeltR,3 Global fit,-56.97,0.24,-159.05,0.74,-7.64,0.01,48.1,0.3

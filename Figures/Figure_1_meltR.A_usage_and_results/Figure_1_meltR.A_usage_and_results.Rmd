@@ -1,0 +1,24 @@
+---
+title: "meltR.A usage and output"
+date: "2022-09-08"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+\eject \pdfpagewidth=250mm \pdfpageheight=400mm
+
+```{r}
+library(MeltR)
+library(tidyverse)
+devtools::load_all()
+
+df = df.absorbance %>% filter(Experiment == "CROWD DP5")
+
+meltR.A(df,
+        NucAcid = c("RNA", "ACCGGU"),
+        Mmodel = "Homoduplex.2State",
+        concT = 80,
+        fitTs = c(20, 65))
+```
+
