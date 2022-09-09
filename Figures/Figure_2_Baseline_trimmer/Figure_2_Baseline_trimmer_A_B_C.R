@@ -32,7 +32,7 @@ f = function(H, S, Temperature, Ct){
   return(model)
 }
 
-####Fit a real but non-ideal melting curve####
+####Fit a real but ideal melting curve####
 
 
 df = df.absorbance %>% filter(Experiment == "Helix A")
@@ -42,8 +42,6 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
   geom_point()
 
 df = df %>% filter(Sample == 4)
-
-?meltR.A
 
 fit = meltR.A(df,
               NucAcid = c("RNA", "CGAAAGGU", "ACCUUUCG"),
@@ -114,27 +112,34 @@ top = ggplot() +
              color = "black", alpha = 0.2) +
   theme_classic() +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
+  theme(legend.position = "none")  +
+  xlab("Temperature (\u00B0C)") +
+  theme(axis.text = element_text(color = "black"))
 
 middle = ggplot(df.ranges) +
   geom_point(mapping = aes(x = Baseline.length, y = dH, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = dH.range) +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
+  theme(legend.position = "none")  +
+  xlab("Baseline length (\u00B0C)") +
+  ylab("\u0394H (kcal/mol)") +
+  theme(axis.text = element_text(color = "black"))
 
 bottom = ggplot(df.ranges) +
   geom_point(mapping = aes(x = Baseline.length, y = Tm, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = Tm.range) +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
-
-?plot_grid
+  theme(legend.position = "none") +
+  xlab("Baseline length (\u00B0C)") +
+  ylab("Tm (\u00B0C)") +
+  theme(axis.text = element_text(color = "black"))
 
 Ideal = plot_grid(top, middle, bottom,
                       align = "v",
-                      ncol = 1)
+                      ncol = 1,
+                  rel_heights = c(1.8, 1, 1))
 
 ####Make modeled data####
 
@@ -237,30 +242,36 @@ top = ggplot() +
              color = "black", alpha = 0.2) +
   theme_classic() +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  xlab("Temperature (\u00B0C)") +
+  theme(axis.text = element_text(color = "black"))
 
 middle = ggplot(df.model.ranges) +
   geom_point(mapping = aes(x = Baseline.length, y = dH, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = dH.range) +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
+  theme(legend.position = "none")  +
+  xlab("Baseline length (\u00B0C)") +
+  ylab("\u0394H (kcal/mol)") +
+  theme(axis.text = element_text(color = "black"))
 
 bottom = ggplot(df.model.ranges) +
   geom_point(mapping = aes(x = Baseline.length, y = Tm, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = Tm.range) +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
-
-?plot_grid
+  theme(legend.position = "none") +
+  xlab("Baseline length (\u00B0C)") +
+  ylab("Tm (\u00B0C)") +
+  theme(axis.text = element_text(color = "black"))
 
 Model = plot_grid(top, middle, bottom,
           align = "v",
-          ncol = 1)
+          ncol = 1,
+          rel_heights = c(1.8, 1, 1))
 
 ####Fit a real but non-ideal melting curve####
-
 
 df = df.absorbance %>% filter(Experiment == "Helix A")
 
@@ -270,7 +281,6 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
 
 df = df %>% filter(Sample == 5)
 
-?meltR.A
 
 fit = meltR.A(df,
               NucAcid = c("RNA", "CGAAAGGU", "ACCUUUCG"),
@@ -341,28 +351,39 @@ top = ggplot() +
              color = "black", alpha = 0.2) +
   theme_classic() +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  xlab("Temperature (\u00B0C)")  +
+  theme(axis.text = element_text(color = "black"))
 
 middle = ggplot(df.ranges) +
   geom_point(mapping = aes(x = Baseline.length, y = dH, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = dH.range) +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
+  theme(legend.position = "none")  +
+  xlab("Baseline length (\u00B0C)") +
+  ylab("\u0394H (kcal/mol)") +
+  theme(axis.text = element_text(color = "black"))
 
 bottom = ggplot(df.ranges) +
   geom_point(mapping = aes(x = Baseline.length, y = Tm, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = Tm.range) +
   scale_color_viridis_b() +
-  theme(legend.position = "none")
-
-?plot_grid
+  theme(legend.position = "none") +
+  xlab("Baseline length (\u00B0C)") +
+  ylab("Tm (\u00B0C)") +
+  theme(axis.text = element_text(color = "black"))
 
 Non.ideal = plot_grid(top, middle, bottom,
           align = "v",
-          ncol = 1)
+          ncol = 1,
+          rel_heights = c(1.8, 1, 1))
 
 ####Consolidate plot####
 
-plot_grid(Model, Ideal, Non.ideal, nrow = 1, allign = "h")
+P = plot_grid(Model, Ideal, Non.ideal, nrow = 1,
+              labels = c("A", "B", "C"), label_size = 16)
+
+ggsave("Figures/Figure_2_Baseline_trimmer/Figure_2.svg", P,
+       width = 5.3, height = 2.3, units = "in", scale = 2)

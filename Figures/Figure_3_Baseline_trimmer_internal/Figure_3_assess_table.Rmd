@@ -1,0 +1,45 @@
+---
+title: "BLtrimmer usage and output"
+date: "2022-09-09"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+\eject \pdfpagewidth=250mm \pdfpageheight=400mm
+
+```{r}
+library(MeltR)
+library(tidyverse)
+devtools::load_all()
+
+df = df.absorbance %>% filter(Experiment == "CROWD DP5")
+
+meltR.A.fit = meltR.A(df,
+        NucAcid = c("RNA", "ACCGGU"),
+        Mmodel = "Homoduplex.2State",
+        concT = 80,
+        fitTs = c(20, 65))
+
+Trimmed = BLTrimmer(meltR.A.fit,
+                    n.ranges.float = 5,
+                    range.step.float = 5,
+                    n.combinations = 1000)
+
+
+Combination = c()
+SD.dH1 = c()
+dH1.minus.dH2 = c()
+
+
+for (i in 1:8){
+  Combination = 
+  SD.dH1 = Trimmed$List.fits[[1]]$Summary[1,3]/Trimmed$List.fits[[1]]$Summary[1,3]
+  dH1.minus.dH2 = abs(Trimmed$List.fits[[1]]$Summary[1,3] Trimmed$List.fits[[1]]$Summary[2,3])
+}
+
+Trimmed$List.fits[[1]]$Summary
+
+
+```
+
