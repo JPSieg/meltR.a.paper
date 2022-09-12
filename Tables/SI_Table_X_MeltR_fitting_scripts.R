@@ -10,7 +10,7 @@ unique(df.absorbance$Experiment)
 
 df = df.absorbance %>% filter(Experiment == "CROWD DP1")
 
-?meltR.A
+#?meltR.A
 
 head(df)
 
@@ -30,7 +30,7 @@ fit = meltR.A(df %>% filter(Sample != "11"),
               file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
               file_prefix = "CROWD DP1")
 
-?BLTrimmer
+#?BLTrimmer
 
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
@@ -266,7 +266,8 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
   geom_point() +
   geom_vline(xintercept = c(5, 40))
 
-View(df)
+#View(df)
+
 fit = meltR.A(df %>% filter(Sample != 3),
               blank = 2,
               NucAcid = c("RNA", "CUGAGUC", "GACUCAG"),
@@ -302,7 +303,8 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
   geom_point() +
   geom_vline(xintercept = c(5, 40))
 
-View(df)
+#View(df)
+
 fit = meltR.A(df %>% filter(Sample != "3"),
               blank = 1,
               NucAcid = c("RNA", "CGUUGC", "GCAACG"),
@@ -323,7 +325,7 @@ BL.fit = BLTrimmer(fit,
 list.df[[8]] = BL.fit$Ensemble.energies
 list.df[[8]]$Helix = "CGUUGC/GCAACG"
 
-####Helix D####
+####Helix A labeled####
 
 unique(df.absorbance$Experiment)
 
@@ -338,11 +340,11 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
   geom_point() +
   geom_vline(xintercept = c(5, 40))
 
-View(df)
+#View(df)
 
 unique(df$Sample)
 fit = meltR.A(df,
-              NucAcid = c("RNA", " CGAAAGGU", "ACCUUUCG"),
+              NucAcid = c("RNA", "CGAAAGGU", "ACCUUUCG"),
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
@@ -355,8 +357,87 @@ BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
                    file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
-                   file_prefix = "Helix D")
+                   file_prefix = "Helix A labeled")
 
-list.df[[8]] = BL.fit$Ensemble.energies
-list.df[[8]]$Helix = "CGUUGC/GCAACG"
+list.df[[9]] = BL.fit$Ensemble.energies
+list.df[[9]]$Helix = "FAMCGAAAGGU/ACCUUUCGBHQ1"
 
+####Helix C labeled####
+
+unique(df.absorbance$Experiment)
+
+df = df.absorbance %>% filter(Experiment == "Helix C labeled")
+
+#?meltR.A
+
+head(df)
+
+ggplot(df, aes(x = Temperature, y = Absorbance)) +
+  facet_wrap(~Sample, scales = "free") +
+  geom_point() +
+  geom_vline(xintercept = c(5, 40))
+
+#View(df)
+
+unique(df$Sample)
+fit = meltR.A(df,
+              NucAcid = c("RNA", "CUGAGUC", "GACUCAG"),
+              concT = 85,
+              Mmodel = "Heteroduplex.2State",
+              Save_results = "all",
+              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_prefix = "Helix C labeled")
+
+#?BLTrimmer
+
+BL.fit = BLTrimmer(fit,
+                   n.combinations = 1000,
+                   Save_results = "all",
+                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_prefix = "Helix C labeled")
+
+list.df[[10]] = BL.fit$Ensemble.energies
+list.df[[10]]$Helix = "FAMCUGAGUC/GACUCAGBHQ1"
+
+####Helix D labeled####
+
+unique(df.absorbance$Experiment)
+
+df = df.absorbance %>% filter(Experiment == "Helix D labeled")
+
+#?meltR.A
+
+head(df)
+
+ggplot(df, aes(x = Temperature, y = Absorbance)) +
+  facet_wrap(~Sample, scales = "free") +
+  geom_point() +
+  geom_vline(xintercept = c(5, 40))
+
+#View(df)
+
+unique(df$Sample)
+fit = meltR.A(df,
+              NucAcid = c("RNA", "CGUUGC", "GCAACG"),
+              concT = 85,
+              Mmodel = "Heteroduplex.2State",
+              Save_results = "all",
+              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_prefix = "Helix C labeled")
+
+#?BLTrimmer
+
+BL.fit = BLTrimmer(fit,
+                   n.combinations = 1000,
+                   Save_results = "all",
+                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_prefix = "Helix C labeled")
+
+list.df[[11]] = BL.fit$Ensemble.energies
+list.df[[11]]$Helix = "FAMCGUUGC/GCAACGBHQ1"
+
+####Consolidate results####
+
+df = bind_rows(list.df)
+
+write.csv(df, "Tables/SI_Table_X_MeltR_fits/Fit_results.csv", row.names = FALSE)
