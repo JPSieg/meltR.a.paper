@@ -169,6 +169,7 @@
 <text x='242.10' y='262.58' text-anchor='middle' style='font-size: 8.80px; font-family: "Arimo";' textLength='14.36px' lengthAdjust='spacingAndGlyphs'>-50</text>
 <text x='159.34' y='275.32' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='125.97px' lengthAdjust='spacingAndGlyphs'>Meltwin ΔH° (kcal/mol)</text>
 <text transform='translate(13.50,129.85) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='167.93px' lengthAdjust='spacingAndGlyphs'>MeltR Global fit ΔH° (kcal/mol)</text>
+<text x='6.18' y='17.47' style='font-size: 16.00px; font-weight: bold; font-family: "Arimo";' textLength='12.37px' lengthAdjust='spacingAndGlyphs'>A</text>
 </g>
 <defs>
   <clipPath id='cpMjg2LjIwfDU3Mi40MHw1Ljc4fDI4MC40Mg=='>
@@ -316,6 +317,7 @@
 <text x='494.54' y='259.78' text-anchor='middle' style='font-size: 8.80px; font-family: "Arimo";' textLength='19.96px' lengthAdjust='spacingAndGlyphs'>-150</text>
 <text x='448.34' y='272.52' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='129.23px' lengthAdjust='spacingAndGlyphs'>Meltwin ΔS° (cal/mol/K)</text>
 <text transform='translate(299.70,129.85) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='171.19px' lengthAdjust='spacingAndGlyphs'>MeltR Global fit ΔS° (cal/mol/K)</text>
+<text x='292.29' y='17.47' style='font-size: 16.00px; font-weight: bold; font-family: "Arimo";' textLength='12.18px' lengthAdjust='spacingAndGlyphs'>B</text>
 </g>
 <defs>
   <clipPath id='cpMC4wMHwyODYuMjB8Mjg5LjE4fDU2OS40Mg=='>
@@ -443,6 +445,7 @@
 <text x='232.90' y='548.78' text-anchor='middle' style='font-size: 8.80px; font-family: "Arimo";' textLength='8.77px' lengthAdjust='spacingAndGlyphs'>-6</text>
 <text x='159.34' y='561.52' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='140.22px' lengthAdjust='spacingAndGlyphs'>Meltwin ΔG°37 (kcal/mol)</text>
 <text transform='translate(13.50,416.05) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arimo";' textLength='182.18px' lengthAdjust='spacingAndGlyphs'>MeltR Global fit ΔG°37 (kcal/mol)</text>
+<text x='5.86' y='303.67' style='font-size: 16.00px; font-weight: bold; font-family: "Arimo";' textLength='11.73px' lengthAdjust='spacingAndGlyphs'>C</text>
 </g>
 <defs>
   <clipPath id='cpMjg2LjIwfDU3Mi40MHwyODcuNjB8NTcxLjAw'>
@@ -541,5 +544,6 @@
 <circle cx='466.30' cy='524.60' r='2.84' style='stroke-width: 1.42; stroke: #7AD151; fill: #7AD151;' />
 <text x='480.42' y='510.53' style='font-size: 8.80px; font-family: "Arimo";' textLength='67.47px' lengthAdjust='spacingAndGlyphs'>1 individual fits</text>
 <text x='480.42' y='527.81' style='font-size: 8.80px; font-family: "Arimo";' textLength='81.37px' lengthAdjust='spacingAndGlyphs'>2 Tm versus ln[Ct]</text>
+<text x='292.83' y='303.67' style='font-size: 16.00px; font-weight: bold; font-family: "Arimo";' textLength='13.27px' lengthAdjust='spacingAndGlyphs'>D</text>
 </g>
 </svg>

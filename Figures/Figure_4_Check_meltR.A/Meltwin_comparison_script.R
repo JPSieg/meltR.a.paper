@@ -145,7 +145,8 @@ PD = ggplot(df, aes(x = Tm,
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
 
-P = plot_grid(PA, PB, PC, PD)  
+P = plot_grid(PA, PB, PC, PD,
+              labels = c("A", "B", "C", "D"), label_size = 16)  
 
 list.files("Figures/Figure_4_Check_meltR.A/")
 
