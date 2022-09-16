@@ -24,7 +24,8 @@ meltR.A.fit = meltR.A(df,
 Trimmed = BLTrimmer(meltR.A.fit,
                     n.ranges.float = 5,
                     range.step.float = 5,
-                    n.combinations = 1000)
+                    n.combinations = 100,
+                    Save_results = "all")
 
 
 Combination = c()

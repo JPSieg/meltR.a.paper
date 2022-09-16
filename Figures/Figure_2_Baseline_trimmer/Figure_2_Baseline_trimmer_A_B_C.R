@@ -71,6 +71,9 @@ df.ranges = data.frame(v.lows,
 df.ranges$Width = df.ranges$v.highs - df.ranges$v.lows
 df.ranges$Baseline.length = df.ranges$v.highs - high
 
+dH.known = 64.76
+Tm.known = 46.4
+  
 mDS = c()
 bDS = c()
 mSS = c()
@@ -117,16 +120,18 @@ top = ggplot() +
   theme(axis.text = element_text(color = "black"))
 
 middle = ggplot(df.ranges) +
+  geom_hline(yintercept = dH.known) +
   geom_point(mapping = aes(x = Baseline.length, y = dH, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = dH.range) +
   scale_color_viridis_b() +
   theme(legend.position = "none")  +
   xlab("Baseline length (\u00B0C)") +
-  ylab("\u0394H (kcal/mol)") +
+  ylab("\u0394H\u00B0 (kcal/mol)") +
   theme(axis.text = element_text(color = "black"))
 
 bottom = ggplot(df.ranges) +
+  geom_hline(yintercept = Tm.known) +
   geom_point(mapping = aes(x = Baseline.length, y = Tm, color = Baseline.length)) +
   theme_classic() +
   scale_y_continuous(limits = Tm.range) +
@@ -162,16 +167,24 @@ fit = meltR.A(df,
         methods = c(TRUE, FALSE, FALSE))
 
 
+fit$Summary$S[1]
+fit$Summary$H[1]
+
 df$f = f(fit$Summary$H[1], fit$Summary$S[1]/1000, df$Temperature, fit$Method.1.indvfits$Ct)
 
 plot(df$Temperature, df$f)
 
+
+Tm = fit$Summary$H[1]/((fit$Summary$S[1]/1000) - 0.00198720425864083*log(4/))
 
 mDS = df.ranges$mDS[15]
 bDS = df.ranges$bDS[15]
 mSS = df.ranges$mSS[15]
 bSS = df.ranges$bSS[15]
 Ct = fit$Method.1.indvfits$Ct[1]
+
+Tm = fit$Summary$H[1]/((fit$Summary$S[1]/1000) - 0.00198720425864083*log(4/Ct))
+Tm-273.15
 
 df.model = df
 
@@ -253,7 +266,7 @@ middle = ggplot(df.model.ranges) +
   scale_color_viridis_b() +
   theme(legend.position = "none")  +
   xlab("Baseline length (\u00B0C)") +
-  ylab("\u0394H (kcal/mol)") +
+  ylab("\u0394H\u00B0 (kcal/mol)") +
   theme(axis.text = element_text(color = "black"))
 
 bottom = ggplot(df.model.ranges) +
@@ -362,7 +375,7 @@ middle = ggplot(df.ranges) +
   scale_color_viridis_b() +
   theme(legend.position = "none")  +
   xlab("Baseline length (\u00B0C)") +
-  ylab("\u0394H (kcal/mol)") +
+  ylab("\u0394H\u00B0 (kcal/mol)") +
   theme(axis.text = element_text(color = "black"))
 
 bottom = ggplot(df.ranges) +

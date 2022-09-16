@@ -1,6 +1,7 @@
 library(tidyverse)
 library(ggrepel)
 library(cowplot)
+devtools::load_all()
 
 df.Meltwin
 
@@ -69,7 +70,7 @@ df$Labels = df$Helix
 
 df$Labels[which(df$Method == "2 Tm versus ln[Ct]")] = NA
 
-View(df)
+View(df %>% select(Helix, dH, H))
 
 PA = ggplot(df, aes(x = dH, xmin = dH - SE.dH, xmax = dH + SE.dH,
                y = H, ymin = Hmin, ymax = Hmax,
@@ -78,7 +79,7 @@ PA = ggplot(df, aes(x = dH, xmin = dH - SE.dH, xmax = dH + SE.dH,
   geom_abline(slope = 1, intercept = 0) +
   geom_pointrange() +
   geom_errorbarh() +
-  #geom_text_repel(size = 2) +
+  geom_text_repel(size = 2) +
   theme_classic() +
   coord_fixed() +
   xlim(-85, -45) +
@@ -89,7 +90,8 @@ PA = ggplot(df, aes(x = dH, xmin = dH - SE.dH, xmax = dH + SE.dH,
   xlab("Meltwin \u0394H\u00B0 (kcal/mol)") +
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
-  
+
+PA  
   
 PB = ggplot(df, aes(x = dS, xmin = dS - SE.dS, xmax = dS + SE.dS,
                y = S, ymin = Smin, ymax = Smax,
