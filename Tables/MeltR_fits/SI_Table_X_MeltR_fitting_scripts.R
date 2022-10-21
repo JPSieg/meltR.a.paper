@@ -23,11 +23,12 @@ unique(df$Sample)
 
 fit = meltR.A(df %>% filter(Sample != "11"),
               NucAcid = c("RNA", "CGCGCG"),
+              wavelength = 280,
               concT = 85,
               Mmodel = "Homoduplex.2State",
               fitTs = c(20, 80),
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DP1")
 
 mean(coef(fit$Method.3.fit)[c(3:8, 19:26)])
@@ -39,7 +40,7 @@ sd(coef(fit$Method.3.fit)[c(9:18, 27:34)])
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DP1")
 
 list.df[[1]] = BL.fit$Ensemble.energies
@@ -66,7 +67,7 @@ fit = meltR.A(df %>% filter(Sample != "24"),
               Mmodel = "Homoduplex.2State",
               Save_results = "all",
               fitTs = c(20, 65),
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DP5")
 
 #?BLTrimmer
@@ -74,7 +75,7 @@ fit = meltR.A(df %>% filter(Sample != "24"),
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DP5")
 
 list.df[[2]] = BL.fit$Ensemble.energies
@@ -99,9 +100,10 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
 fit = meltR.A(df,
               NucAcid = c("RNA", "CCAUGG"),
               concT = 60,
+              wavelength = 280,
               Mmodel = "Homoduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DP9")
 
  #?BLTrimmer
@@ -109,7 +111,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DP9")
 
 list.df[[3]] = BL.fit$Ensemble.energies
@@ -136,7 +138,7 @@ fit = meltR.A(df,
               concT = 55,
               Mmodel = "Homoduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DR1")
 
 #?BLTrimmer
@@ -144,7 +146,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DR1")
 
 list.df[[4]] = BL.fit$Ensemble.energies
@@ -169,9 +171,10 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
 fit = meltR.A(df,
               NucAcid = c("RNA", "GCAAUUGC"),
               concT = 55,
+              wavelength = 280,
               Mmodel = "Homoduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DR5")
 
 #?BLTrimmer
@@ -179,7 +182,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DR5")
 
 list.df[[5]] = BL.fit$Ensemble.energies
@@ -206,7 +209,7 @@ fit = meltR.A(df %>% filter(Sample !=  "9"),
               concT = 40,
               Mmodel = "Homoduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DR17")
 
 #?BLTrimmer
@@ -214,7 +217,7 @@ fit = meltR.A(df %>% filter(Sample !=  "9"),
 BL.fit = BLTrimmer(fit,
                     n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DR17")
 
 ####Helix A####
@@ -239,7 +242,7 @@ fit = meltR.A(df,
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "Helix A")
 
 #?BLTrimmer
@@ -247,7 +250,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix A")
 
 list.df[[6]] = BL.fit$Ensemble.energies
@@ -276,7 +279,7 @@ fit = meltR.A(df %>% filter(Sample != 3),
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "Helix C")
 
 #?BLTrimmer
@@ -284,7 +287,7 @@ fit = meltR.A(df %>% filter(Sample != 3),
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix C")
 
 list.df[[7]] = BL.fit$Ensemble.energies
@@ -313,7 +316,7 @@ fit = meltR.A(df,
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "Helix D")
 
 #?BLTrimmer
@@ -321,7 +324,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix D")
 
 list.df[[8]] = BL.fit$Ensemble.energies
@@ -350,7 +353,7 @@ fit = meltR.A(df,
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "Helix A labeled")
 
 #?BLTrimmer
@@ -358,7 +361,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix A labeled")
 
 list.df[[9]] = BL.fit$Ensemble.energies
@@ -387,7 +390,7 @@ fit = meltR.A(df,
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "Helix C labeled")
 
 #?BLTrimmer
@@ -395,7 +398,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix C labeled")
 
 list.df[[10]] = BL.fit$Ensemble.energies
@@ -424,7 +427,7 @@ fit = meltR.A(df,
               concT = 85,
               Mmodel = "Heteroduplex.2State",
               Save_results = "all",
-              file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+              file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "Helix C labeled")
 
 #?BLTrimmer
@@ -432,7 +435,7 @@ fit = meltR.A(df,
 BL.fit = BLTrimmer(fit,
                    n.combinations = 1000,
                    Save_results = "all",
-                   file_path = "Tables/SI_Table_X_MeltR_fits/Fit_data",
+                   file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix C labeled")
 
 list.df[[11]] = BL.fit$Ensemble.energies
@@ -442,4 +445,4 @@ list.df[[11]]$Helix = "FAMCGUUGC/GCAACGBHQ1"
 
 df = bind_rows(list.df)
 
-write.csv(df, "Tables/SI_Table_X_MeltR_fits/Fit_results.csv", row.names = FALSE)
+write.csv(df, "Tables/MeltR_fits/Fit_results.csv", row.names = FALSE)

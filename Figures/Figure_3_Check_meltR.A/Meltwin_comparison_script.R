@@ -5,9 +5,9 @@ devtools::load_all()
 
 df.Meltwin
 
-list.files("Tables/SI_Table_X_MeltR_fits")
+list.files("Tables/MeltR_fits")
 
-df.MeltR = read.csv("Tables/SI_Table_X_MeltR_fits/Fit_results.csv") %>% filter(Method == "3 Global fit")
+df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv") %>% filter(Method == "3 Global fit")
 
 head(df.MeltR)
 
@@ -21,12 +21,12 @@ Tmin = c()
 Tmax = c()
 
 for (i in 1:nrow(df.MeltR)){
-  Hmin[i] = as.numeric(strsplit(df.MeltR$CI95.H[i], split = " to ")[[1]][1])
-  Hmax[i] = as.numeric(strsplit(df.MeltR$CI95.H[i], split = " to ")[[1]][2])
-  Smin[i] = as.numeric(strsplit(df.MeltR$CI95.S[i], split = " to ")[[1]][1])
-  Smax[i] = as.numeric(strsplit(df.MeltR$CI95.S[i], split = " to ")[[1]][2])
-  Gmin[i] = as.numeric(strsplit(df.MeltR$CI95.G[i], split = " to ")[[1]][1])
-  Gmax[i] = as.numeric(strsplit(df.MeltR$CI95.G[i], split = " to ")[[1]][2])
+  Hmin[i] = as.numeric(strsplit(df.MeltR$CI95.dH[i], split = " to ")[[1]][1])
+  Hmax[i] = as.numeric(strsplit(df.MeltR$CI95.dH[i], split = " to ")[[1]][2])
+  Smin[i] = as.numeric(strsplit(df.MeltR$CI95.dS[i], split = " to ")[[1]][1])
+  Smax[i] = as.numeric(strsplit(df.MeltR$CI95.dS[i], split = " to ")[[1]][2])
+  Gmin[i] = as.numeric(strsplit(df.MeltR$CI95.dG[i], split = " to ")[[1]][1])
+  Gmax[i] = as.numeric(strsplit(df.MeltR$CI95.dG[i], split = " to ")[[1]][2])
   Tmin[i] = as.numeric(strsplit(df.MeltR$CI95.Tm_at_0.1mM[i], split = " to ")[[1]][1])
   Tmax[i] = as.numeric(strsplit(df.MeltR$CI95.Tm_at_0.1mM[i], split = " to ")[[1]][2])
 }
@@ -39,6 +39,8 @@ df.MeltR$Gmin = Gmin
 df.MeltR$Gmax = Gmax
 df.MeltR$Tmin = Tmin
 df.MeltR$Tmax = Tmax
+
+colnames(df.MeltR)[c(2, 4, 6)] = c("H", "S", "G")
 
 df.M1 = cbind(df.MeltR %>%
                 arrange(Helix) %>%
@@ -70,31 +72,31 @@ df$Labels = df$Helix
 
 df$Labels[which(df$Method == "2 Tm versus ln[Ct]")] = NA
 
-View(df %>% select(Helix, dH, H))
+colnames(df)
 
-PA = ggplot(df, aes(x = dH, xmin = dH - SE.dH, xmax = dH + SE.dH,
-               y = H, ymin = Hmin, ymax = Hmax,
+PA = ggplot(df, aes(y = dH, ymin = dH - SE.dH, ymax = dH + SE.dH,
+               x = H, xmin = Hmin, xmax = Hmax,
                label = Helix,
                color = Method)) +
   geom_abline(slope = 1, intercept = 0) +
   geom_pointrange() +
   geom_errorbarh() +
-  geom_text_repel(size = 2) +
+  #geom_text_repel(size = 2) +
   theme_classic() +
   coord_fixed() +
   xlim(-85, -45) +
   ylim(-85, -45) +
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
-  ylab("MeltR Global fit \u0394H\u00B0 (kcal/mol)") +
-  xlab("Meltwin \u0394H\u00B0 (kcal/mol)") +
+  xlab("MeltR Global fit \u0394H\u00B0 (kcal/mol)") +
+  ylab("Meltwin \u0394H\u00B0 (kcal/mol)") +
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
 
 PA  
   
-PB = ggplot(df, aes(x = dS, xmin = dS - SE.dS, xmax = dS + SE.dS,
-               y = S, ymin = Smin, ymax = Smax,
+PB = ggplot(df, aes(y = dS, ymin = dS - SE.dS, ymax = dS + SE.dS,
+               x = S, xmin = Smin, xmax = Smax,
                label = Helix,
                color = Method)) +
   geom_abline(slope = 1, intercept = 0) +
@@ -107,8 +109,8 @@ PB = ggplot(df, aes(x = dS, xmin = dS - SE.dS, xmax = dS + SE.dS,
   ylim(-250, -110)+
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
-  ylab("MeltR Global fit \u0394S\u00B0 (cal/mol/K)") +
-  xlab("Meltwin \u0394S\u00B0 (cal/mol/K)")+
+  xlab("MeltR Global fit \u0394S\u00B0 (cal/mol/K)") +
+  ylab("Meltwin \u0394S\u00B0 (cal/mol/K)")+
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
 
@@ -125,13 +127,13 @@ PC = ggplot(df, aes(x = dG, xmin = dG - SE.dG, xmax = dG + SE.dG,
   ylim(-11, -5)+
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
-  ylab("MeltR Global fit \u0394G\u00B037 (kcal/mol)") +
-  xlab("Meltwin \u0394G\u00B037 (kcal/mol)")+
+  xlab("MeltR Global fit \u0394G\u00B037 (kcal/mol)") +
+  ylab("Meltwin \u0394G\u00B037 (kcal/mol)")+
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
 
-PD = ggplot(df, aes(x = Tm,
-               y = Tm_at_0.1mM, ymin = Tmin, ymax = Tmax,
+PD = ggplot(df, aes(y = Tm,
+               x = Tm_at_0.1mM, xmin = Tmin, xmax = Tmax,
                label = Helix,
                color = Method)) +
   geom_abline(slope = 1, intercept = 0) +
@@ -142,15 +144,108 @@ PD = ggplot(df, aes(x = Tm,
   ylim(30, 70)+
   theme(axis.text = element_text(color = "black"),
         legend.position = c(0.75, 0.15))  +
-  xlab("Meltwin Tm at 0.1 mM (\u00B0C)") +
-  ylab("MeltR Global fit Tm at 0.1 mM (\u00B0C)")+
+  ylab("Meltwin Tm at 0.1 mM (\u00B0C)") +
+  xlab("MeltR Global fit Tm at 0.1 mM (\u00B0C)")+
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
 
+####Percent error heat map####
+
+df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv") 
+
+Comparisons = list(c(1, 1),
+                   c(1, 2),
+                   c(2, 1),
+                   c(2, 2),
+                   c(3, 1),
+                   c(3, 2))
+
+list.df.comparison = {}
+
+for (i in 1:length(Comparisons)){
+  colnames(df.MeltR)
+  unique(df.MeltR$Method)
+  
+  if (Comparisons[[i]][1] == 1){method = "1 individual fits"}
+  if (Comparisons[[i]][1] == 2){method = "2 Tm versus ln[Ct]"}
+  if (Comparisons[[i]][1] == 3){method = "3 Global fit"}
+  
+  df.method.MeltR = df.MeltR %>% filter(Method == method) %>% arrange(Helix)
+  
+  colnames(df.Meltwin)
+  unique(df.Meltwin$Method)
+  
+  if (Comparisons[[i]][2] == 1){method = "1 individual fits"}
+  if (Comparisons[[i]][2] == 2){method = "2 Tm versus ln[Ct]"}
+  
+  df.method.Meltwin = df.Meltwin %>% filter(Method == method) %>% arrange(Sequence) %>% filter(Sequence != "UAUAUAUA")
+  
+  H = mean(100*abs(df.method.MeltR$dH - df.method.Meltwin$dH)/abs((df.method.MeltR$dH + df.method.Meltwin$dH)/2))
+  S = mean(100*abs(df.method.MeltR$dS - df.method.Meltwin$dS)/abs((df.method.MeltR$dS + df.method.Meltwin$dS)/2))
+  G = mean(100*abs(df.method.MeltR$dG - df.method.Meltwin$dG)/abs((df.method.MeltR$dG + df.method.Meltwin$dG)/2))
+  Tm = mean(100*abs(df.method.MeltR$Tm_at_0.1mM - df.method.Meltwin$Tm)/abs((df.method.MeltR$Tm_at_0.1mM + df.method.Meltwin$Tm)/2))
+  
+  df.H = data.frame("Parameter" =  "dH",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = H)
+  df.S = data.frame("Parameter" =  "dS",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = S)
+  df.G = data.frame("Parameter" =  "dG",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = G)
+  df.Tm = data.frame("Parameter" =  "Tm",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = Tm)
+  
+  list.df.comparison[[i]] = bind_rows(df.H, df.S, df.G, df.Tm)
+}
+
+df.compare = bind_rows(list.df.comparison)
+
+
+list.files("Figures/Figure_3_Check_meltR.A/")
+
+write.csv(df.compare, "Figures/Figure_3_Check_meltR.A/MeltR_MeltWin_percent_error_by_method.csv")
+
+head(df.compare)
+
+#View(df.compare)
+
+df.compare$Parameter = factor(df.compare$Parameter,
+                              levels = c("dH", "dS", "dG", "Tm"),
+                              labels = c("\u0394H\u00B0", "\u0394S\u00B0", "\u0394G\u00B037", "Tm"))
+
+df.compare$Label = paste(round(df.compare$Error, digits = 1), "%", sep = "")
+
+P1 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
+                       fill = Error, label = Label)) +
+  geom_tile() +
+  geom_text() +
+  facet_wrap(~Parameter) +
+  scale_y_continuous(breaks = c(1, 2)) +
+  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 5),
+                       name = "%error") +
+  theme_classic() +
+  theme(axis.text = element_text(color = "black")) +
+  xlab("MeltR method") +
+  ylab("MeltWin method")
+
+
+####Consolidate plots####
+
 P = plot_grid(PA, PB, PC, PD,
-              labels = c("A", "B", "C", "D"), label_size = 16)  
+              labels = c("B", "C", "D", "F"), label_size = 16)  
 
-list.files("Figures/Figure_4_Check_meltR.A/")
+P = plot_grid(P1, P, ncol = 1,
+              labels = c("A", ""), label_size = 16,
+              rel_heights = c(1, 4))
 
-ggsave("Figures/Figure_4_Check_meltR.A/Figure_4_Meltwin_comparison.svg", P,
-       width = 5.3, height = 5.3, units = "in", scale = 1.5, bg = "white")
+list.files("Figures/Figure_3_Check_meltR.A/")
+
+ggsave("Figures/Figure_3_Check_meltR.A/Figure_3_Meltwin_comparison.svg", P,
+       width = 5.3, height = 6, units = "in", scale = 1.5, bg = "white")
