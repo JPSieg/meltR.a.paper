@@ -19,9 +19,15 @@ meltR.A.fit = meltR.A(df,
         NucAcid = c("RNA", "ACCGGU"),
         Mmodel = "Homoduplex.2State",
         concT = 80,
-        fitTs = c(20, 65))
+        fitTs = c(20, 65),
+        Silent = T)
+#?BLTrimmer
 
 Trimmed = BLTrimmer(meltR.A.fit,
+                    Trim.method = "floating",
+                    Assess.method = 3,
+                    no.trim.range = c(0.1, 0.9),
+                    quantile.threshold = 0.25,
                     n.ranges.float = 5,
                     range.step.float = 5,
                     n.combinations = 1000)

@@ -235,7 +235,6 @@ P1 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
   xlab("MeltR method") +
   ylab("MeltWin method")
 
-
 ####Consolidate plots####
 
 P = plot_grid(PA, PB, PC, PD,
@@ -249,3 +248,4 @@ list.files("Figures/Figure_3_Check_meltR.A/")
 
 ggsave("Figures/Figure_3_Check_meltR.A/Figure_3_Meltwin_comparison.svg", P,
        width = 5.3, height = 6, units = "in", scale = 1.5, bg = "white")
+

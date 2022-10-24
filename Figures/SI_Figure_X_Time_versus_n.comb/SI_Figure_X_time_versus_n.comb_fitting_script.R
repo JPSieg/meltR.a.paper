@@ -27,6 +27,8 @@ v.log10n = seq(1, log10(5^length(unique(df$Sample))), length.out = 50)
 
 v.n = floor(10^v.log10n)
 
+v.n*0.5/1000
+
 n.core = 3
 
 sum(v.n[33:50])/n.core
@@ -38,7 +40,7 @@ sum(v.n[c(36,  48, 49, 35, 37)])
 sum(v.n[c(47, 50)])
 
 list.n = list(v.n[c(40:46, 34,  39, 38)],
-              v.n[c(33, 36,  48, 49, 35, 37)],
+              v.n[c(36,  48, 49, 35, 37)],
               v.n[c(47, 50)])
 
 list.files("Figures/SI_Figure_X_Time_versus_n.comb")

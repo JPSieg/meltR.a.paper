@@ -34,7 +34,6 @@ f = function(H, S, Temperature, Ct){
 
 ####Fit a real but ideal melting curve####
 
-
 df = df.absorbance %>% filter(Experiment == "Helix A")
 
 ggplot(df, aes(x = Temperature, y = Absorbance)) +
@@ -49,7 +48,7 @@ fit = meltR.A(df,
               methods = c(TRUE, FALSE, FALSE))
 
 
-df$f = f(fit$Summary$H[1], fit$Summary$S[1]/1000, df$Temperature, fit$Method.1.indvfits$Ct)
+df$f = f(fit$Summary$dH[1], fit$Summary$dS[1]/1000, df$Temperature, fit$Method.1.indvfits$Ct)
 
 plot(df$Temperature, df$f)
 
