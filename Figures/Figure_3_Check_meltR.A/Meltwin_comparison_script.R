@@ -242,7 +242,7 @@ P = plot_grid(PA, PB, PC, PD,
 
 P = plot_grid(P1, P, ncol = 1,
               labels = c("A", ""), label_size = 16,
-              rel_heights = c(1, 4))
+              rel_heights = c(1, 3))
 
 list.files("Figures/Figure_3_Check_meltR.A/")
 
