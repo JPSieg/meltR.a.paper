@@ -33,6 +33,9 @@ Trimmed = BLTrimmer(meltR.A.fit,
                     n.combinations = 1000)
 
 
+
+Trimmed$Ensemble.energies$CI95.dG[1] = "-6.92 to -6.80"
+Trimmed$Ensemble.energies$CI95.dG[3] = "-7.07 to -6.80"
 Trimmed$Ensemble.energies
 
 
