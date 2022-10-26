@@ -1,4 +1,7 @@
 library(ggbeeswarm)
+library(tidyverse)
+library(ggpubr)
+devtools::load_all()
 
 ####Check error from NN model####
 
@@ -129,10 +132,11 @@ ggplot(df, aes(x = Program, y = error.dG)) +
   stat_compare_means(comparisons = l.comp) +
   geom_beeswarm() +
   theme_classic() +
-  scale_y_continuous(breaks = c(-0.1, -0.05, 0, 0.05,  0.1)) +
+  scale_y_continuous(breaks = c(-0.1, -0.05, 0, 0.05,  0.1), limits = c(-0.1, 0.2)) +
   theme(axis.text.x = element_text(color = "black",
                                     angle = 45,
-                                   hjust = 1)) +
+                                   hjust = 1),
+        axis.text.y = element_text(color = "black")) +
   xlab("") +
   ylab("%error \u0394G\u00B037 (kcal/mol)")
 
