@@ -5,9 +5,9 @@ devtools::load_all()
 
 ####Read in data####
 
-list.files("Figures/SI_Figure_X_BLtrimmer_modeled_data")
+list.files("Figures/")
 
-df = read.csv("Figures/SI_Figure_X_BLtrimmer_modeled_data/Modeled_fit_results.csv")
+df = read.csv("Figures/SI_Figure_X_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/Modeled_fit_results.csv")
 
 ####Convert confidence intervals to nummeric####
 
@@ -21,12 +21,12 @@ Tmin = c()
 Tmax = c()
 
 for (i in 1:nrow(df)){
-  Hmin[i] = as.numeric(strsplit(df$CI95.H[i], split = " to ")[[1]][1])
-  Hmax[i] = as.numeric(strsplit(df$CI95.H[i], split = " to ")[[1]][2])
-  Smin[i] = as.numeric(strsplit(df$CI95.S[i], split = " to ")[[1]][1])
-  Smax[i] = as.numeric(strsplit(df$CI95.S[i], split = " to ")[[1]][2])
-  Gmin[i] = as.numeric(strsplit(df$CI95.G[i], split = " to ")[[1]][1])
-  Gmax[i] = as.numeric(strsplit(df$CI95.G[i], split = " to ")[[1]][2])
+  Hmin[i] = as.numeric(strsplit(df$CI95.dH[i], split = " to ")[[1]][1])
+  Hmax[i] = as.numeric(strsplit(df$CI95.dH[i], split = " to ")[[1]][2])
+  Smin[i] = as.numeric(strsplit(df$CI95.dS[i], split = " to ")[[1]][1])
+  Smax[i] = as.numeric(strsplit(df$CI95.dS[i], split = " to ")[[1]][2])
+  Gmin[i] = as.numeric(strsplit(df$CI95.dG[i], split = " to ")[[1]][1])
+  Gmax[i] = as.numeric(strsplit(df$CI95.dG[i], split = " to ")[[1]][2])
   Tmin[i] = as.numeric(strsplit(df$CI95.Tm_at_0.1mM[i], split = " to ")[[1]][1])
   Tmax[i] = as.numeric(strsplit(df$CI95.Tm_at_0.1mM[i], split = " to ")[[1]][2])
 }
@@ -42,9 +42,9 @@ df$Tmax = Tmax
 
 ####Add in known parameters####
 
-list.files("Figures/SI_Figure_X_BLtrimmer_modeled_data")
+list.files("Figures/SI_Figure_X_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN")
 
-df.known = read.csv("Figures/SI_Figure_X_BLtrimmer_modeled_data/Modeled_Xia_energies.csv")
+df.known = read.csv("Figures/SI_Figure_X_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/Modeled_Xia_energies.csv")
 
 helices = unique(df$Helix)
 
@@ -65,7 +65,7 @@ for (i in helices){
 colnames(df)
 
 PA = ggplot(df, aes(x = Known.H,
-                    y = H, ymin = Hmin, ymax = Hmax,
+                    y = dH, ymin = Hmin, ymax = Hmax,
                     label = Helix,
                     color = Method)) +
   geom_abline(slope = 1, intercept = 0) +
@@ -86,7 +86,7 @@ PA
 ####dS plot####
 
 PB = ggplot(df, aes(x = 1000*Known.S,
-                    y = S, ymin = Smin, ymax = Smax,
+                    y = dS, ymin = Smin, ymax = Smax,
                     label = Helix,
                     color = Method)) +
   geom_abline(slope = 1, intercept = 0) +
@@ -105,7 +105,7 @@ PB = ggplot(df, aes(x = 1000*Known.S,
 PB
 
 PC = ggplot(df, aes(x = Known.G,
-                    y = G, ymin = Gmin, ymax = Gmax,
+                    y = dG, ymin = Gmin, ymax = Gmax,
                     label = Helix,
                     color = Method)) +
   geom_abline(slope = 1, intercept = 0) +
@@ -146,13 +146,13 @@ P = plot_grid(PA, PB, PC, PD,
 
 list.files("Figures/")
 
-ggsave("Figures/SI_Figure_X_BLtrimmer_modeled_data/SI_Figure_X_BLtrimmer_modeled_data.svg", P,
+ggsave("Figures/SI_Figure_X_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/SI_Figure_X_BLtrimmer_modeled_data.svg", P,
        width = 5.3, height = 5.3, units = "in", scale = 1.5, bg = "white")
 
 
 ####Rewrite results file####
 
-write.csv(df, "Figures/SI_Figure_X_BLtrimmer_modeled_data/Modeled_fit_results.csv", row.names = FALSE)
+write.csv(df, "Figures/SI_Figure_X_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/Modeled_fit_results.csv", row.names = FALSE)
 
 
 

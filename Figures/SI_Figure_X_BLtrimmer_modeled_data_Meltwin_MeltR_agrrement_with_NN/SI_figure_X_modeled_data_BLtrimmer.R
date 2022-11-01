@@ -68,7 +68,7 @@ for (i in 1:nrow(df)){
       mED[j] = rnorm(1, 0.001113342, 0.0007760626)
       mSS[j] = rnorm(1, 0.001113342, 0.0007760626)
       bED[j] = Ct[j]*Pathlength[j]*Extinct.lower - mED[j]*90
-      bSS[j] = Ct[j]*Pathlength[j]*Extinct - mED[j]*90
+      bSS[j] = Ct[j]*Pathlength[j]*Extinct - mSS[j]*90
     }
     
     seqF = RNA[2]
