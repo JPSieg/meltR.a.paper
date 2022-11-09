@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.6643519"
-     inkscape:cx="524.52851"
-     inkscape:cy="610.14743"
+     inkscape:zoom="1.1768745"
+     inkscape:cx="539.9896"
+     inkscape:cy="211.1525"
      inkscape:window-width="1846"
      inkscape:window-height="1136"
      inkscape:window-x="0"
@@ -107,107 +107,105 @@
          id="rect26" />
     </clipPath>
   </defs>
-  <g
-     clip-path="url(#cpMjguNjB8MjY3LjU2fDIyLjY5fDY0Ljk4)"
-     id="g57">
-    <rect
-       x="28.60"
-       y="22.69"
-       width="238.96"
-       height="42.29"
-       style="stroke-width: 1.07; stroke: none; fill: #FFFFFF;"
-       id="rect31" />
-    <rect
-       x="39.46"
-       y="43.84"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #326F8D;"
-       id="rect33" />
-    <rect
-       x="39.46"
-       y="24.61"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #7CD151;"
-       id="rect35" />
-    <rect
-       x="111.87"
-       y="43.84"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #93D54C;"
-       id="rect37" />
-    <rect
-       x="111.87"
-       y="24.61"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #23A784;"
-       id="rect39" />
-    <rect
-       x="184.28"
-       y="43.84"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #3A608B;"
-       id="rect41" />
-    <rect
-       x="184.28"
-       y="24.61"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #89D34E;"
-       id="rect43" />
-    <text
-       x="75.66"
-       y="57.47"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text45">1.8%</text>
-    <text
-       x="75.66"
-       y="38.24"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="17.50px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text47">4%</text>
-    <text
-       x="148.08"
-       y="57.47"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text49">4.2%</text>
-    <text
-       x="148.08"
-       y="38.24"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="17.50px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text51">3%</text>
-    <text
-       x="220.49"
-       y="57.47"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text53">1.5%</text>
-    <text
-       x="220.49"
-       y="38.24"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text55">4.1%</text>
-  </g>
+  <rect
+     x="28.6"
+     y="22.690001"
+     width="238.96001"
+     height="42.290001"
+     style="fill:#ffffff;stroke:none;stroke-width:1.07"
+     id="rect31" />
+  <rect
+     x="39.459999"
+     y="43.84"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#326f8d;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect33" />
+  <rect
+     x="39.459999"
+     y="24.610001"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#7cd151;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect35" />
+  <rect
+     x="111.87"
+     y="43.84"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#93d54c;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect37" />
+  <rect
+     x="111.87"
+     y="24.610001"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#23a784;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect39" />
+  <rect
+     x="184.28"
+     y="43.84"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#3a608b;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect41" />
+  <rect
+     x="184.28"
+     y="24.610001"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#89d34e;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect43" />
+  <text
+     x="75.660004"
+     y="57.470001"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text45">1.8%</text>
+  <text
+     x="75.660004"
+     y="38.240002"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="17.5"
+     lengthAdjust="spacingAndGlyphs"
+     id="text47"
+     transform="matrix(1.5989992,0,0,1,-45.488234,0.33092836)">4.0%</text>
+  <text
+     x="148.08"
+     y="57.470001"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text49">4.2%</text>
+  <text
+     x="148.08"
+     y="38.240002"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="17.5"
+     lengthAdjust="spacingAndGlyphs"
+     id="text51"
+     transform="matrix(1.5014483,0,0,1,-74.45631,-0.11441672)">3.0%</text>
+  <text
+     x="220.49001"
+     y="57.470001"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text53">1.5%</text>
+  <text
+     x="220.49001"
+     y="38.240002"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text55">4.1%</text>
   <g
      clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
      id="g59" />
@@ -223,107 +221,104 @@
          id="rect61" />
     </clipPath>
   </defs>
-  <g
-     clip-path="url(#cpMjguNjB8MjY3LjU2fDg3LjY3fDEyOS45Nw==)"
-     id="g92">
-    <rect
-       x="28.60"
-       y="87.67"
-       width="238.96"
-       height="42.29"
-       style="stroke-width: 1.07; stroke: none; fill: #FFFFFF;"
-       id="rect66" />
-    <rect
-       x="39.46"
-       y="108.82"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #2B9089;"
-       id="rect68" />
-    <rect
-       x="39.46"
-       y="89.59"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #25A385;"
-       id="rect70" />
-    <rect
-       x="111.87"
-       y="108.82"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #2C838C;"
-       id="rect72" />
-    <rect
-       x="111.87"
-       y="89.59"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #2A9588;"
-       id="rect74" />
-    <rect
-       x="184.28"
-       y="108.82"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #2A9788;"
-       id="rect76" />
-    <rect
-       x="184.28"
-       y="89.59"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #27A983;"
-       id="rect78" />
-    <text
-       x="75.66"
-       y="122.45"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text80">2.5%</text>
-    <text
-       x="75.66"
-       y="103.23"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text82">2.9%</text>
-    <text
-       x="148.08"
-       y="122.45"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text84">2.2%</text>
-    <text
-       x="148.08"
-       y="103.23"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text86">2.6%</text>
-    <text
-       x="220.49"
-       y="122.45"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text88">2.6%</text>
-    <text
-       x="220.49"
-       y="103.23"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="17.50px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text90">3%</text>
-  </g>
+  <rect
+     x="28.6"
+     y="87.669998"
+     width="238.96001"
+     height="42.290001"
+     style="fill:#ffffff;stroke:none;stroke-width:1.07"
+     id="rect66" />
+  <rect
+     x="39.459999"
+     y="108.82"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#2b9089;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect68" />
+  <rect
+     x="39.459999"
+     y="89.589996"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#25a385;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect70" />
+  <rect
+     x="111.87"
+     y="108.82"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#2c838c;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect72" />
+  <rect
+     x="111.87"
+     y="89.589996"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#2a9588;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect74" />
+  <rect
+     x="184.28"
+     y="108.82"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#2a9788;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect76" />
+  <rect
+     x="184.28"
+     y="89.589996"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#27a983;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect78" />
+  <text
+     x="75.660004"
+     y="122.45"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text80">2.5%</text>
+  <text
+     x="75.660004"
+     y="103.23"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text82">2.9%</text>
+  <text
+     x="148.08"
+     y="122.45"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text84">2.2%</text>
+  <text
+     x="148.08"
+     y="103.23"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text86">2.6%</text>
+  <text
+     x="220.49001"
+     y="122.45"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text88">2.6%</text>
+  <text
+     x="220.49001"
+     y="103.23"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="17.5"
+     lengthAdjust="spacingAndGlyphs"
+     id="text90"
+     transform="matrix(1.4280605,0,0,1,-95.633344,-0.33092836)">3.0%</text>
   <g
      clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
      id="g94" />
@@ -339,107 +334,104 @@
          id="rect96" />
     </clipPath>
   </defs>
-  <g
-     clip-path="url(#cpMjczLjA0fDUxMi4wMHwyMi42OXw2NC45OA==)"
-     id="g127">
-    <rect
-       x="273.04"
-       y="22.69"
-       width="238.96"
-       height="42.29"
-       style="stroke-width: 1.07; stroke: none; fill: #FFFFFF;"
-       id="rect101" />
-    <rect
-       x="283.90"
-       y="43.84"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #2A788E;"
-       id="rect103" />
-    <rect
-       x="283.90"
-       y="24.61"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #C1DD3F;"
-       id="rect105" />
-    <rect
-       x="356.31"
-       y="43.84"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #CBDF3C;"
-       id="rect107" />
-    <rect
-       x="356.31"
-       y="24.61"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #49B477;"
-       id="rect109" />
-    <rect
-       x="428.73"
-       y="43.84"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #37678C;"
-       id="rect111" />
-    <rect
-       x="428.73"
-       y="24.61"
-       width="72.41"
-       height="19.22"
-       style="stroke-width: 0.21; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #CBDF3C;"
-       id="rect113" />
-    <text
-       x="320.11"
-       y="57.47"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="17.50px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text115">2%</text>
-    <text
-       x="320.11"
-       y="38.24"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text117">4.5%</text>
-    <text
-       x="392.52"
-       y="57.47"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text119">4.6%</text>
-    <text
-       x="392.52"
-       y="38.24"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text121">3.3%</text>
-    <text
-       x="464.93"
-       y="57.47"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text123">1.7%</text>
-    <text
-       x="464.93"
-       y="38.24"
-       text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="28.03px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text125">4.6%</text>
-  </g>
+  <rect
+     x="273.04001"
+     y="22.690001"
+     width="238.96001"
+     height="42.290001"
+     style="fill:#ffffff;stroke:none;stroke-width:1.07"
+     id="rect101" />
+  <rect
+     x="283.89999"
+     y="43.84"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#2a788e;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect103" />
+  <rect
+     x="283.89999"
+     y="24.610001"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#c1dd3f;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect105" />
+  <rect
+     x="356.31"
+     y="43.84"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#cbdf3c;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect107" />
+  <rect
+     x="356.31"
+     y="24.610001"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#49b477;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect109" />
+  <rect
+     x="428.73001"
+     y="43.84"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#37678c;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect111" />
+  <rect
+     x="428.73001"
+     y="24.610001"
+     width="72.410004"
+     height="19.219999"
+     style="fill:#cbdf3c;stroke:none;stroke-width:0.21;stroke-linecap:square;stroke-linejoin:miter"
+     id="rect113" />
+  <text
+     x="320.10999"
+     y="57.470001"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="17.5"
+     lengthAdjust="spacingAndGlyphs"
+     id="text115"
+     transform="matrix(1.5023576,0,0,1,-160.83441,-0.15138212)">2.0%</text>
+  <text
+     x="320.10999"
+     y="38.240002"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text117">4.5%</text>
+  <text
+     x="392.51999"
+     y="57.470001"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text119">4.6%</text>
+  <text
+     x="392.51999"
+     y="38.240002"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text121">3.3%</text>
+  <text
+     x="464.92999"
+     y="57.470001"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text123">1.7%</text>
+  <text
+     x="464.92999"
+     y="38.240002"
+     text-anchor="middle"
+     style="font-size:11.04px;font-family:Arimo"
+     textLength="28.030001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text125">4.6%</text>
   <g
      clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
      id="g129" />
@@ -3559,68 +3551,68 @@
      lengthAdjust="spacingAndGlyphs"
      id="text1279">Meltwin Tm at 0.1 mM (°C)</text>
   <text
-     x="447.56"
-     y="563.22998"
-     style="font-size:11px;font-family:Arimo"
-     textLength="42.66"
-     lengthAdjust="spacingAndGlyphs"
-     id="text1283"
-     transform="translate(1.621197,-11.050895)">Meltwin</text>
-  <text
-     x="447.56"
-     y="575.10999"
-     style="font-size:11px;font-family:Arimo"
-     textLength="42.48"
-     lengthAdjust="spacingAndGlyphs"
-     id="text1285"
-     transform="translate(1.621197,-11.050895)">method</text>
-  <line
-     x1="457.8212"
-     y1="586.23907"
-     x2="457.8212"
-     y2="572.41907"
-     style="stroke:#440154;stroke-width:1.07;stroke-linecap:butt"
-     id="line1287" />
-  <circle
-     cx="457.8212"
-     cy="579.3291"
-     r="2.8399999"
-     style="fill:#440154;stroke:#440154;stroke-width:1.42"
-     id="circle1289" />
-  <line
-     x1="457.8212"
-     y1="603.5191"
-     x2="457.8212"
-     y2="589.6991"
-     style="stroke:#7ad151;stroke-width:1.07;stroke-linecap:butt"
-     id="line1291" />
-  <circle
-     cx="457.8212"
-     cy="596.60907"
-     r="2.8399999"
-     style="fill:#7ad151;stroke:#7ad151;stroke-width:1.42"
-     id="circle1293" />
-  <text
-     x="470.32001"
-     y="593.59003"
-     style="font-size:8.8px;font-family:Arimo"
-     textLength="67.470001"
-     lengthAdjust="spacingAndGlyphs"
-     id="text1295"
-     transform="translate(1.621197,-11.050895)">1 individual fits</text>
-  <text
-     x="470.32001"
-     y="610.87"
-     style="font-size:8.8px;font-family:Arimo"
-     textLength="81.370003"
-     lengthAdjust="spacingAndGlyphs"
-     id="text1297"
-     transform="translate(1.621197,-11.050895)">2 Tm versus ln[Ct]</text>
-  <text
      x="291.66"
      y="422.47"
      style="font-weight:bold;font-size:16px;font-family:Arimo"
      textLength="10.92"
      lengthAdjust="spacingAndGlyphs"
      id="text1299">F</text>
+  <text
+     x="447.56"
+     y="563.22998"
+     style="font-size:11px;font-family:Arimo;white-space:pre"
+     textLength="42.66"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1283"
+     transform="matrix(0.9158124,0,0,0.9158124,-337.24963,-327.43677)">Meltwin</text>
+  <text
+     x="447.56"
+     y="575.10999"
+     style="font-size:11px;font-family:Arimo;white-space:pre"
+     textLength="42.48"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1285"
+     transform="matrix(0.9158124,0,0,0.9158124,-295.44838,-338.12573)">method</text>
+  <line
+     x1="73.711884"
+     y1="208.71091"
+     x2="73.711884"
+     y2="194.8909"
+     style="fill:none;stroke:#440154;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     id="line1287" />
+  <circle
+     cx="73.711884"
+     cy="201.80093"
+     r="2.8399999"
+     style="fill:#440154;stroke:#440154;stroke-width:1.42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     id="circle1289" />
+  <line
+     x1="73.711884"
+     y1="225.99094"
+     x2="73.711884"
+     y2="212.17093"
+     style="fill:none;stroke:#7ad151;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     id="line1291" />
+  <circle
+     cx="73.711884"
+     cy="219.0809"
+     r="2.8399999"
+     style="fill:#7ad151;stroke:#7ad151;stroke-width:1.42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     id="circle1293" />
+  <text
+     x="470.32001"
+     y="593.59003"
+     style="font-size:8.8px;font-family:Arimo;white-space:pre"
+     textLength="67.470001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1295"
+     transform="translate(-382.48811,-388.57907)">1 individual fits</text>
+  <text
+     x="470.32001"
+     y="610.87"
+     style="font-size:8.8px;font-family:Arimo;white-space:pre"
+     textLength="81.370003"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1297"
+     transform="translate(-382.48811,-388.57907)">2 Tm versus ln[Ct]</text>
 </svg>

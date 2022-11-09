@@ -89,6 +89,7 @@ A = ggplot(df, aes(x = 100*frac.dH1.dH2.error, fill = Helix))+
   xlab("%Difference in \u0394H\u00B0 between\n Method 1 and Method 2") +
   ylab("Frequency") +
   theme_classic() +
+  scale_x_continuous(limits = c(0, 30), breaks = c(0, 5, 10, 15, 20, 25, 30)) +
   scale_fill_manual(values = viridis(5), name = "") +
   theme(axis.text = element_text(color = "black"),
         legend.position = c(0.5, 0.75),
@@ -113,4 +114,5 @@ plot_grid(A, B, ncol = 1, labels = c("C", "D"), label_size = 14)
 
 list.files("Figures/Figure_4_BLTrimmer_two_state_check")
 
-ggsave("Figures/Figure_4_BLTrimmer_two_state_check/Figure_4_Two_state_test.svg", scale = 2)
+ggsave("Figures/Figure_4_BLTrimmer_two_state_check/Figure_4_Two_state_test.svg", scale = 1.2,
+       width = 5, height = 5)
