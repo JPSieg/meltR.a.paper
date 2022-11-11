@@ -1,1 +1,1 @@
-R CMD Rd2pdf -o Supplementary_file_2_meltR.A_help.pdf meltR.A.Rd
+R CMD Rd2pdf -o File_S2_meltR.A_help.pdf meltR.A.Rd
