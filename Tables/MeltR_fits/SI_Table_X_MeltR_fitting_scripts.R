@@ -24,16 +24,12 @@ unique(df$Sample)
 fit = meltR.A(df %>% filter(Sample != "11"),
               NucAcid = c("RNA", "CGCGCG"),
               wavelength = 280,
-              concT = 85,
+              concT = 75,
               Mmodel = "Homoduplex.2State",
               fitTs = c(20, 80),
               Save_results = "all",
               file_path = "Tables/MeltR_fits/Fit_data",
               file_prefix = "CROWD DP1")
-
-mean(coef(fit$Method.3.fit)[c(3:8, 19:26)])
-sd(coef(fit$Method.3.fit)[c(3:8, 19:26)])
-sd(coef(fit$Method.3.fit)[c(9:18, 27:34)])
 
 #?BLTrimmer
 
@@ -99,7 +95,8 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
 
 fit = meltR.A(df,
               NucAcid = c("RNA", "CCAUGG"),
-              concT = 60,
+              concT = max(df$Temperature),
+              fitTs = c(20,65),
               wavelength = 280,
               Mmodel = "Homoduplex.2State",
               Save_results = "all",

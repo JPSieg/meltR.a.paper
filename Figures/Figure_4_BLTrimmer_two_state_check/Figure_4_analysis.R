@@ -14,7 +14,6 @@ ggplot(df, aes(x = Temperature, y = Absorbance, color = Sample)) +
   geom_point() +
   geom_vline(xintercept = c(5,75))
 
-
 ?meltR.A
 
 fit = meltR.A(df,
@@ -27,7 +26,8 @@ fit = meltR.A(df,
 
 Trim = BLTrimmer(fit, n.combinations = 1000, Save_results = "all",
                  file_path = "Figures/Figure_4_BLTrimmer_two_state_check",
-                 file_prefix = "Multistate")
+                 file_prefix = "Multistate",
+                 memory.light = F)
 
 Trim$System.time
 
@@ -60,7 +60,8 @@ fit = meltR.A(df,
 
 Trim = BLTrimmer(fit, n.combinations = 1000, Save_results = "all",
                  file_path = "Figures/Figure_4_BLTrimmer_two_state_check",
-                 file_prefix = "Two-state")
+                 file_prefix = "Two-state",
+                 memory.light = F)
 
 Trim$System.time
 
@@ -84,15 +85,21 @@ colnames(df)
 
 ####Make B####
 
-A = ggplot(df, aes(x = 100*frac.dH1.dH2.error, fill = Helix))+
-  geom_histogram(bins = 50, alpha = 0.85) +
+unique(df$Helix)
+
+A = ggplot()+
+  geom_histogram(data = df %>% filter(Helix == "Two-state"),
+                 mapping = aes(x = 100*frac.dH1.dH2.error, fill = Helix),
+                 bins = 50, alpha = 1, fill = viridis(5)[1]) +
+  geom_histogram(data = df %>% filter(Helix != "Two-state"),
+                 mapping = aes(x = 100*frac.dH1.dH2.error, fill = Helix),
+                 bins = 50, alpha = 0.8, fill = viridis(5)[3]) +
   xlab("%Difference in \u0394H\u00B0 between\n Method 1 and Method 2") +
   ylab("Frequency") +
   theme_classic() +
-  scale_x_continuous(limits = c(0, 30), breaks = c(0, 5, 10, 15, 20, 25, 30)) +
-  scale_fill_manual(values = viridis(5), name = "") +
+  scale_x_continuous(limits = c(0, 35), breaks = c(0, 5, 10, 15, 20, 25, 30,5)) +
   theme(axis.text = element_text(color = "black"),
-        legend.position = c(0.5, 0.75),
+        legend.position = c(0.35, 0.75),
         legend.background = element_blank()) 
 
 ####Make C####
@@ -110,9 +117,9 @@ B = ggplot(df) +
 
 ####Save plots####
 
-plot_grid(A, B, ncol = 1, labels = c("C", "D"), label_size = 14)
+plot_grid(A, ncol = 1, labels = c("C"), label_size = 14)
 
 list.files("Figures/Figure_4_BLTrimmer_two_state_check")
 
 ggsave("Figures/Figure_4_BLTrimmer_two_state_check/Figure_4_Two_state_test.svg", scale = 1.2,
-       width = 5, height = 5)
+       width = 5, height = 2.5)

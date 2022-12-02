@@ -13,29 +13,25 @@ library(MeltR)
 library(tidyverse)
 devtools::load_all()
 
-df = df.absorbance %>% filter(Experiment == "CROWD DP5")
-
-meltR.A.fit = meltR.A(df,
-        NucAcid = c("RNA", "ACCGGU"),
+df = df.absorbance %>% filter(Experiment == "CROWD DP1")
+meltR.A.fit =meltR.A(df,
+        NucAcid = c("RNA", "CGCGCG"),
         Mmodel = "Homoduplex.2State",
         concT = 80,
-        fitTs = c(20, 65),
+        fitTs = c(15, 70),
+        wavelength = 280,
         Silent = T)
-#?BLTrimmer
 
 Trimmed = BLTrimmer(meltR.A.fit,
                     Trim.method = "floating",
                     Assess.method = 3,
-                    no.trim.range = c(0.1, 0.9),
-                    quantile.threshold = 0.25,
-                    n.ranges.float = 5,
-                    range.step.float = 5,
+                    no.trim.range = c(0.15, 0.85),
+                    quantile.threshold = 0.1,
+                    n.ranges.float = 6,
+                    range.step.float = 4,
                     n.combinations = 1000)
 
 
-
-Trimmed$Ensemble.energies$CI95.dG[1] = "-6.92 to -6.80"
-Trimmed$Ensemble.energies$CI95.dG[3] = "-7.07 to -6.80"
 Trimmed$Ensemble.energies
 
 

@@ -5,9 +5,11 @@ devtools::load_all()
 
 df.Meltwin
 
-list.files("Tables/MeltR_fits")
+File = "Tables/MeltR_fits/Fit_results.csv"
 
-df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv") %>% filter(Method == "3 Global fit")
+list.files("Tables/MeltR_fits/Fit_results")
+
+df.MeltR = read.csv(File) %>% filter(Method == "3 Global fit")
 
 head(df.MeltR)
 
@@ -93,8 +95,6 @@ PA = ggplot(df, aes(y = dH, ymin = dH - SE.dH, ymax = dH + SE.dH,
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "Meltwin\nmethod")
 
-PA  
-  
 PB = ggplot(df, aes(y = dS, ymin = dS - SE.dS, ymax = dS + SE.dS,
                x = S, xmin = Smin, xmax = Smax,
                label = Helix,
@@ -151,7 +151,7 @@ PD = ggplot(df, aes(y = Tm,
 
 ####Percent error heat map####
 
-df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv") 
+df.MeltR = read.csv(File) 
 
 Comparisons = list(c(1, 1),
                    c(1, 2),
