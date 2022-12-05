@@ -23,7 +23,7 @@
      inkscape:document-units="in"
      showgrid="false"
      inkscape:zoom="1.328202"
-     inkscape:cx="201.40009"
+     inkscape:cx="201.02364"
      inkscape:cy="140.41539"
      inkscape:window-width="1846"
      inkscape:window-height="1136"
@@ -2216,4 +2216,26 @@
        id="text287"
        transform="matrix(0.91087564,0,0,0.91087564,-42.926719,46.70553)">Non two-state</text>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.75;fill:#440154;fill-opacity:1"
+     x="78.782928"
+     y="77.64035"
+     id="text3882"><tspan
+       sodipodi:role="line"
+       id="tspan3880"
+       style="font-size:8px;stroke-width:0.75;fill:#440154;fill-opacity:1"
+       x="78.782928"
+       y="77.64035">N = 1000 baseline combinations</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:0.75;fill:#4da6a3;fill-opacity:1"
+     x="208.94482"
+     y="150.92679"
+     id="text3882-4"><tspan
+       sodipodi:role="line"
+       id="tspan3880-0"
+       style="font-size:8px;stroke-width:0.75;fill:#4da6a3;fill-opacity:1"
+       x="208.94482"
+       y="150.92679">N = 1000 baseline combinations</tspan></text>
 </svg>

@@ -24,8 +24,8 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="1.1768745"
-     inkscape:cx="570.57911"
-     inkscape:cy="230.6958"
+     inkscape:cx="638.55577"
+     inkscape:cy="434.62578"
      inkscape:window-width="1846"
      inkscape:window-height="1136"
      inkscape:window-x="0"
@@ -2449,12 +2449,12 @@
        lengthAdjust="spacingAndGlyphs"
        id="text877">MeltR Global fit ΔS° (cal/mol/K)</text>
     <text
-       transform="translate(315.52,270.25) rotate(-90)"
+       transform="rotate(-90,292.885,-22.635)"
        text-anchor="middle"
-       style="font-size: 11.00px; font-family: &quot;Arimo&quot;;"
-       textLength="129.23px"
+       style="font-size:11px;font-family:Arimo"
+       textLength="129.23"
        lengthAdjust="spacingAndGlyphs"
-       id="text879">Meltwin ΔS° (cal/mol/K)</text>
+       id="text879">Meltwin ΔS° (cal/mol*K)</text>
     <text
        x="292.06"
        y="179.47"
