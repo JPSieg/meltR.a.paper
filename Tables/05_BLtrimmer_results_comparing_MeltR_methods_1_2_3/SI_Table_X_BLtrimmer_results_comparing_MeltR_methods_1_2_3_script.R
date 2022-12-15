@@ -5,7 +5,7 @@ list.files("Tables/")
 
 df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv") 
 
-df1 = df.MeltR %>% filter(Method == "1 individual fits")
+df1 = df.MeltR %>% filter(Method == "1 Individual fits")
 
 Helix = df1$Helix
 

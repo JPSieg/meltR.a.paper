@@ -53,7 +53,7 @@ df.M1 = cbind(df.MeltR %>%
                 arrange(Sequence) %>%
                 select(dH, SE.dH, dS, SE.dS, dG, SE.dG, Tm))
 
-df.M1$Method = "1 individual fits"
+df.M1$Method = "1 Individual fits"
 
 df.M2 = cbind(df.MeltR %>%
                 arrange(Helix) %>%
@@ -89,11 +89,11 @@ PA = ggplot(df, aes(y = dH, ymin = dH - SE.dH, ymax = dH + SE.dH,
   xlim(-85, -45) +
   ylim(-85, -45) +
   theme(axis.text = element_text(color = "black"),
-        legend.position = "none") +
+        legend.position = c(0.75, 0.2)) +
   xlab("MeltR Global fit \u0394H\u00B0 (kcal/mol)") +
-  ylab("Meltwin \u0394H\u00B0 (kcal/mol)") +
+  ylab("MeltWin \u0394H\u00B0 (kcal/mol)") +
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
-                     name = "Meltwin\nmethod")
+                     name = "MeltWin\nmethod")
 
 PB = ggplot(df, aes(y = dS, ymin = dS - SE.dS, ymax = dS + SE.dS,
                x = S, xmin = Smin, xmax = Smax,
@@ -109,10 +109,10 @@ PB = ggplot(df, aes(y = dS, ymin = dS - SE.dS, ymax = dS + SE.dS,
   ylim(-250, -110)+
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
-  xlab("MeltR Global fit \u0394S\u00B0 (cal/mol/K)") +
-  ylab("Meltwin \u0394S\u00B0 (cal/mol/K)")+
+  xlab("MeltR Global fit \u0394S\u00B0 (cal/mol*K)") +
+  ylab("MeltWin \u0394S\u00B0 (cal/mol/K)")+
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
-                     name = "Meltwin\nmethod")
+                     name = "MeltWin\nmethod")
 
 PC = ggplot(df, aes(x = dG, xmin = dG - SE.dG, xmax = dG + SE.dG,
                y = G, ymin = Gmin, ymax = Gmax,
@@ -128,9 +128,9 @@ PC = ggplot(df, aes(x = dG, xmin = dG - SE.dG, xmax = dG + SE.dG,
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
   xlab("MeltR Global fit \u0394G\u00B037 (kcal/mol)") +
-  ylab("Meltwin \u0394G\u00B037 (kcal/mol)")+
+  ylab("MeltWin \u0394G\u00B037 (kcal/mol)")+
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
-                     name = "Meltwin\nmethod")
+                     name = "MeltWin\nmethod")
 
 PD = ggplot(df, aes(y = Tm,
                x = Tm_at_0.1mM, xmin = Tmin, xmax = Tmax,
@@ -143,11 +143,11 @@ PD = ggplot(df, aes(y = Tm,
   xlim(30, 70) +
   ylim(30, 70)+
   theme(axis.text = element_text(color = "black"),
-        legend.position = c(0.75, 0.15))  +
-  ylab("Meltwin Tm at 0.1 mM (\u00B0C)") +
+        legend.position = "none")  +
+  ylab("MeltWin Tm at 0.1 mM (\u00B0C)") +
   xlab("MeltR Global fit Tm at 0.1 mM (\u00B0C)")+
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
-                     name = "Meltwin\nmethod")
+                     name = "MeltWin\nmethod")
 
 ####Percent error heat map####
 
@@ -166,7 +166,7 @@ for (i in 1:length(Comparisons)){
   colnames(df.MeltR)
   unique(df.MeltR$Method)
   
-  if (Comparisons[[i]][1] == 1){method = "1 individual fits"}
+  if (Comparisons[[i]][1] == 1){method = "1 Individual fits"}
   if (Comparisons[[i]][1] == 2){method = "2 Tm versus ln[Ct]"}
   if (Comparisons[[i]][1] == 3){method = "3 Global fit"}
   

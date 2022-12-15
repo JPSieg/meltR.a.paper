@@ -23,7 +23,7 @@ df.Meltwin = df.Meltwin %>%
   arrange(Sequence) %>%
   filter(Sequence != "UAUAUAUA")
 
-df.Meltwin1 =  df.Meltwin %>% filter(Method == "1 individual fits")
+df.Meltwin1 =  df.Meltwin %>% filter(Method == "1 Individual fits")
 
 H.MW1 = paste(df.Meltwin1$dH, " (\u00B1", df.Meltwin1$SE.dH, ")", sep = "")
 S.MW1 = paste(df.Meltwin1$dS, " (\u00B1", df.Meltwin1$SE.dS, ")", sep = "")

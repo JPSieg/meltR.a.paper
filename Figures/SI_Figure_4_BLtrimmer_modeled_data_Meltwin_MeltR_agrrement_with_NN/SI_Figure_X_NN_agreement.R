@@ -123,6 +123,7 @@ l.comp = list(c("MeltR\n1 individual fits", "MeltWin\n1 individual fits"),
               c("MeltR\n3 Global fit", "MeltWin\n1 individual fits"),
               c("MeltR\n3 Global fit", "MeltWin\n2 Tm versus ln[Ct]"))
 
+length(unique(df$Helix))
 
 ggplot(df, aes(x = Program, y = 100*error.dG)) +
   geom_hline(yintercept =  0) +
@@ -131,7 +132,7 @@ ggplot(df, aes(x = Program, y = 100*error.dG)) +
   #stat_compare_means(comparisons = l.comp) +
   geom_beeswarm() +
   theme_classic() +
-  scale_y_continuous(breaks = c(-10, -5, 0, 5,  10), limits = c(-10, 10)) +
+  #scale_y_continuous(breaks = c(-10, -5, 0, 5,  10), limits = c(-10, 10)) +
   theme(axis.text.x = element_text(color = "black",
                                     angle = 45,
                                    hjust = 1),

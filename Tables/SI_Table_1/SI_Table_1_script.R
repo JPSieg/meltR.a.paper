@@ -9,7 +9,7 @@ unique(df.MeltR$Method)
 
 ####MeltR method 1####
 
-df1 = df.MeltR %>% filter(Method == "1 individual fits") %>% arrange(Helix)
+df1 = df.MeltR %>% filter(Method == "1 Individual fits") %>% arrange(Helix)
 
 Helix = df1$Helix
 
@@ -51,7 +51,7 @@ colnames(df.3) = paste("MeltR", colnames(df.3))
 ####MeltWin Method 1####
 
 df4 = df.Meltwin %>%
-  filter(Method == "1 individual fits") %>%
+  filter(Method == "1 Individual fits") %>%
   filter(Sequence != "UAUAUAUA") %>%
   arrange(Sequence)
 

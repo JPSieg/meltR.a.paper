@@ -22,9 +22,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="in"
      showgrid="false"
-     inkscape:zoom="1.328202"
-     inkscape:cx="201.02364"
-     inkscape:cy="140.41539"
+     inkscape:zoom="1.8783613"
+     inkscape:cx="224.13154"
+     inkscape:cy="137.61996"
      inkscape:window-width="1846"
      inkscape:window-height="1136"
      inkscape:window-x="0"
@@ -1430,7 +1430,7 @@
      textLength="11.62"
      lengthAdjust="spacingAndGlyphs"
      id="text8420-3"
-     transform="translate(0.15590634,-203.37915)">A</text>
+     transform="matrix(0.74570948,0,0,0.77523816,1.7352259,-156.47851)">A</text>
   <text
      x="5.8099999"
      y="218.3"
@@ -1438,7 +1438,7 @@
      textLength="11.62"
      lengthAdjust="spacingAndGlyphs"
      id="text8420-3-6"
-     transform="translate(123.39685,-203.38549)">B</text>
+     transform="matrix(0.69021981,0,0,0.75823528,125.53011,-152.93689)">B</text>
   <text
      xml:space="preserve"
      style="font-size:6.03853px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:1.13222"
@@ -1789,7 +1789,7 @@
      textLength="10.27"
      lengthAdjust="spacingAndGlyphs"
      id="text5678"
-     transform="translate(0.47715231,50.356279)">C</text>
+     transform="matrix(0.83275449,0,0,0.76239639,1.4343462,51.668946)">C</text>
   <rect
      width="100%"
      height="100%"
@@ -2238,4 +2238,12 @@
        style="font-size:8px;stroke-width:0.75;fill:#4da6a3;fill-opacity:1"
        x="208.94482"
        y="150.92679">N = 1000 baseline combinations</tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 126.66435,208.34675 0.12407,16.06175"
+     id="path1255" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="m 257.49014,208.37515 0.12407,16.06175"
+     id="path1255-2" />
 </svg>
