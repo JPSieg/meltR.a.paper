@@ -7,13 +7,22 @@ devtools::load_all()
 
 ####Read in data####
 
-list.files("Figures/SI_Figure_X_Time_versus_n.comb/Fit_results")
+list.files("Figures/SI_Figure_3_Time_versus_n.comb/Fit_results")
 
-list.df = lapply(paste("Figures/SI_Figure_X_Time_versus_n.comb/Fit_results",
-                       list.files("Figures/SI_Figure_X_Time_versus_n.comb/Fit_results"),
+list.df = lapply(paste("Figures/SI_Figure_3_Time_versus_n.comb/Fit_results",
+                       list.files("Figures/SI_Figure_3_Time_versus_n.comb/Fit_results"),
                        sep = "/"), read.csv)
 
 df = bind_rows(list.df)
+
+####Make CIs characters####
+
+df$CI95.dH = as.character(df$CI95.dH)
+df$CI95.dS = as.character(df$CI95.dS)
+df$CI95.dG = as.character(df$CI95.dG)
+df$CI95.Tm_at_0.1mM = as.character(df$CI95.Tm_at_0.1mM)
+
+
 
 ####Pull out error bars####
 
@@ -126,5 +135,5 @@ P = plot_grid(A,
           labels = c("A", ""),
           label_size = 16)
 
-ggsave("Figures/SI_Figure_X_Time_versus_n.comb/SI_Figure_X_Time_versus_ncomb.svg", P,
-       width = 4, height = 5, units = "in", scale = 2.5)
+ggsave("Figures/SI_Figure_3_Time_versus_n.comb/SI_Figure_X_Time_versus_ncomb.svg", P,
+       width = 4, height = 5, units = "in", scale = 2.5, bg = "white")

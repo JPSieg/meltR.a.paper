@@ -7,7 +7,10 @@
    version="1.1"
    id="svg1307"
    sodipodi:docname="Figure_3_Meltwin_comparison.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="Figure_3_Meltwin_comparison.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -23,15 +26,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.58843724"
-     inkscape:cx="239.61774"
-     inkscape:cy="367.92369"
-     inkscape:window-width="1846"
-     inkscape:window-height="1136"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="1.6643518"
+     inkscape:cx="319.04312"
+     inkscape:cy="-27.337969"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1307" />
+     inkscape:current-layer="svg1307"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs4">
     <style
@@ -433,13 +438,14 @@
        lengthAdjust="spacingAndGlyphs"
        id="text123">1.6%</text>
     <text
-       x="464.93"
-       y="38.24"
+       x="464.92999"
+       y="38.240002"
        text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="17.50px"
+       style="font-size:11.04px;font-family:Arimo"
+       textLength="17.5"
        lengthAdjust="spacingAndGlyphs"
-       id="text125">4%</text>
+       id="text125"
+       transform="matrix(1.6163839,0,0,1,-286.34033,0)">4.0%</text>
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
@@ -3680,7 +3686,7 @@
        lengthAdjust="spacingAndGlyphs"
        id="text1301"><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan62327">MeltWin</tspan> <tspan
+   id="tspan62327">MeltWin</tspan><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan59322">T</tspan>  at 0.1 mM (°C)</text>
     <text

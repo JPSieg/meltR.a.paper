@@ -5,8 +5,11 @@
    viewBox="0 0 648 432"
    version="1.2"
    id="svg26097"
-   sodipodi:docname="CROWD DP1_baseline_ensemble_analysis.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="CROWD_DP1_baseline_ensemble_analysis.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="CROWD_DP1_baseline_ensemble_analysis.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -22,15 +25,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.88265586"
-     inkscape:cx="680.3331"
-     inkscape:cy="444.68067"
-     inkscape:window-width="1846"
-     inkscape:window-height="1136"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="1.2482639"
+     inkscape:cx="398.55355"
+     inkscape:cy="317.64117"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg26097" />
+     inkscape:current-layer="svg26097"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs10178">
     <g
@@ -42901,29 +42906,29 @@
   <text
      xml:space="preserve"
      style="font-size:9.92216px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.744163"
-     x="12.804118"
+     x="6.1949387"
      y="14.282185"
      id="text42973"><tspan
        sodipodi:role="line"
        id="tspan42971"
        style="stroke-width:0.744163"
-       x="12.804118"
+       x="6.1949387"
        y="14.282185">(A)</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.92216px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.744163"
-     x="227.78036"
-     y="13.22502"
+     x="5.471602"
+     y="223.51711"
      id="text44883"><tspan
        sodipodi:role="line"
        id="tspan44881"
        style="stroke-width:0.744163"
-       x="227.78036"
-       y="13.22502">(B)</tspan></text>
+       x="5.471602"
+       y="223.51711">(B)</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.92216px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.744163"
-     x="439.65646"
+     x="219.15021"
      y="12.684715"
      id="text44883-7"
      inkscape:transform-center-x="-2.6972575"
@@ -42931,39 +42936,39 @@
        sodipodi:role="line"
        id="tspan44881-3"
        style="stroke-width:0.744163"
-       x="439.65646"
+       x="219.15021"
        y="12.684715">(C)</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.92216px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.744163"
-     x="12.277184"
-     y="226.79665"
+     x="224.37177"
+     y="223.19164"
      id="text58649"><tspan
        sodipodi:role="line"
        id="tspan58647"
        style="stroke-width:0.744163"
-       x="12.277184"
-       y="226.79665">(D)</tspan></text>
+       x="224.37177"
+       y="223.19164">(D)</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.92216px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.744163"
-     x="226.11063"
-     y="224.297"
+     x="438.2052"
+     y="12.803255"
      id="text60625"><tspan
        sodipodi:role="line"
        id="tspan60623"
        style="stroke-width:0.744163"
-       x="226.11063"
-       y="224.297">(E)</tspan></text>
+       x="438.2052"
+       y="12.803255">(E)</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.92216px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.744163"
-     x="440.92981"
-     y="221.84328"
+     x="436.12314"
+     y="224.24661"
      id="text60625-2"><tspan
        id="tspan60623-6"
        style="stroke-width:0.744163"
-       x="440.92981"
-       y="221.84328"
+       x="436.12314"
+       y="224.24661"
        sodipodi:role="line">(F)</tspan></text>
 </svg>
