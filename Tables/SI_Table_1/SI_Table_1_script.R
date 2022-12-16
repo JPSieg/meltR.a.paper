@@ -51,7 +51,7 @@ colnames(df.3) = paste("MeltR", colnames(df.3))
 ####MeltWin Method 1####
 
 df4 = df.Meltwin %>%
-  filter(Method == "1 Individual fits") %>%
+  filter(Method == "1 individual fits") %>%
   filter(Sequence != "UAUAUAUA") %>%
   arrange(Sequence)
 
@@ -93,5 +93,3 @@ colnames(df.Table)
 ####Write the table####
 
 write.csv(df.Table, "Tables/SI_Table_1/SI_Table_1.csv", row.names = FALSE)
-
-View(df.Table)
