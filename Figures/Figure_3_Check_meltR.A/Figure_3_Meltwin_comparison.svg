@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="3.3287036"
-     inkscape:cx="314.68708"
-     inkscape:cy="552.01671"
+     inkscape:zoom="0.58843722"
+     inkscape:cx="403.61145"
+     inkscape:cy="558.25836"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -1995,12 +1995,16 @@
        lengthAdjust="spacingAndGlyphs"
        id="text621">1 Individual fits</text>
     <text
-       x="185.71"
+       x="185.71001"
        y="357.59"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="81.37px"
+       style="font-size:8.8px;font-family:Arimo;white-space:pre"
+       textLength="81.370003"
        lengthAdjust="spacingAndGlyphs"
-       id="text623">2 Tm versus ln[Ct]</text>
+       id="text623">2 <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan1063">T</tspan>   versus ln <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan1065">C</tspan>  </text>
     <text
        x="6.09"
        y="179.47"
@@ -3853,7 +3857,7 @@
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan62327">MeltWin</tspan><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan59322">T</tspan>  at 0.1 mM (°C)</text>
+   id="tspan59322">T</tspan>   at 0.1 mM (°C)</text>
   <text
      x="291.66"
      y="422.47"
@@ -3875,15 +3879,15 @@
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.34961px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:0.626222"
-     x="-540.31714"
-     y="310.57175"
+     x="-542.87286"
+     y="310.83194"
      id="text53622-4"
      transform="rotate(-91.312213)"><tspan
        sodipodi:role="line"
        id="tspan53620-6"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.34961px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.626222"
-       x="-540.31714"
-       y="310.57175">m</tspan></text>
+       x="-542.87286"
+       y="310.83194">m</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:7.94142px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:0.595609"
@@ -3914,4 +3918,26 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arimo;-inkscape-font-specification:'Arimo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
        x="547.10596"
        y="17.843874">mean</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+     x="201.65508"
+     y="359.8248"
+     id="text1069"><tspan
+       sodipodi:role="line"
+       id="tspan1067"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+       x="201.65508"
+       y="359.8248">m</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+     x="263.12888"
+     y="359.16248"
+     id="text1069-2"><tspan
+       sodipodi:role="line"
+       id="tspan1067-3"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+       x="263.12888"
+       y="359.16248">t</tspan></text>
 </svg>
