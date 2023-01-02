@@ -6,7 +6,7 @@
    version="1.2"
    id="svg12505"
    sodipodi:docname="Results.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -22,15 +22,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.95117728"
-     inkscape:cx="765.89298"
-     inkscape:cy="354.82345"
-     inkscape:window-width="1846"
-     inkscape:window-height="1136"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="5.3806712"
+     inkscape:cx="111.97488"
+     inkscape:cy="59.007508"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg12505" />
+     inkscape:current-layer="svg12505"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs11634">
     <g
@@ -2952,79 +2954,94 @@
      height="100%"
      style="fill:#000000;fill-opacity:1"
      transform="translate(-6.2000937,-72.266495)" />
-  <g
-     style="fill:#000000;fill-opacity:1"
-     id="g2347"
-     transform="translate(-93.94046,-71.805973)">
-    <use
-       xlink:href="#glyph0-10"
-       x="113.84292"
-       y="93.917999"
-       id="use2327"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-17"
-       x="119.07329"
-       y="93.917999"
-       id="use2329"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-7"
-       x="124.30365"
-       y="93.917999"
-       id="use2331"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-18"
-       x="129.53401"
-       y="93.917999"
-       id="use2333"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-19"
-       x="134.76437"
-       y="93.917999"
-       id="use2335"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-18"
-       x="139.99475"
-       y="93.917999"
-       id="use2337"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-7"
-       x="145.22511"
-       y="93.917999"
-       id="use2339"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-20"
-       x="150.45547"
-       y="93.917999"
-       id="use2341"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-21"
-       x="155.68584"
-       y="93.917999"
-       id="use2343"
-       width="100%"
-       height="100%" />
-    <use
-       xlink:href="#glyph0-22"
-       x="160.9162"
-       y="93.917999"
-       id="use2345"
-       width="100%"
-       height="100%" />
-  </g>
+  <use
+     xlink:href="#glyph0-10"
+     x="113.84292"
+     y="93.917999"
+     id="use2327"
+     width="100%"
+     height="100%"
+     transform="translate(-93.94046,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-17"
+     x="119.07329"
+     y="93.917999"
+     id="use2329"
+     width="100%"
+     height="100%"
+     transform="translate(-82.231883,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-17"
+     x="119.07329"
+     y="93.917999"
+     id="use2329-5"
+     width="100%"
+     height="100%"
+     transform="translate(-72.665027,-71.666856)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-7"
+     x="124.30365"
+     y="93.917999"
+     id="use2331"
+     width="100%"
+     height="100%"
+     transform="translate(-92.407194,-71.666585)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-18"
+     x="129.53401"
+     y="93.917999"
+     id="use2333"
+     width="100%"
+     height="100%"
+     transform="translate(-103.55822,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-19"
+     x="134.76437"
+     y="93.917999"
+     id="use2335"
+     width="100%"
+     height="100%"
+     transform="translate(-93.94046,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-7"
+     x="145.22511"
+     y="93.917999"
+     id="use2339"
+     width="100%"
+     height="100%"
+     transform="translate(-93.94046,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-20"
+     x="150.45547"
+     y="93.917999"
+     id="use2341"
+     width="100%"
+     height="100%"
+     transform="translate(-93.94046,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-21"
+     x="155.68584"
+     y="93.917999"
+     id="use2343"
+     width="100%"
+     height="100%"
+     transform="translate(-93.94046,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
+  <use
+     xlink:href="#glyph0-22"
+     x="160.9162"
+     y="93.917999"
+     id="use2345"
+     width="100%"
+     height="100%"
+     transform="translate(-93.94046,-71.805973)"
+     style="fill:#000000;fill-opacity:1" />
 </svg>

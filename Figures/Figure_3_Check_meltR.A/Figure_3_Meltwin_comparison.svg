@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.6643518"
-     inkscape:cx="319.04312"
-     inkscape:cy="-27.337969"
+     inkscape:zoom="3.3287036"
+     inkscape:cx="314.68708"
+     inkscape:cy="552.01671"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -53,6 +53,162 @@
       white-space: pre;
     }
   ]]></style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1880">
+      <g
+         id="g1884">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1882" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1886">
+      <g
+         id="g1890">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1888" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1892">
+      <g
+         id="g1896">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1894" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1898">
+      <g
+         id="g1902">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1900" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1904">
+      <g
+         id="g1908">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1906" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1910">
+      <g
+         id="g1914">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1912" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1916">
+      <g
+         id="g1920">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1918" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1922">
+      <g
+         id="g1926">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1924" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1928">
+      <g
+         id="g1932">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1930" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1934">
+      <g
+         id="g1938">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1936" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1940">
+      <g
+         id="g1944">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1942" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1946">
+      <g
+         id="g1950">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1948" />
+      </g>
+    </clipPath>
   </defs>
   <rect
      width="100%"
@@ -3535,168 +3691,176 @@
        style="stroke-width: 1.42; stroke: #7AD151; fill: #7AD151;"
        id="circle1251" />
   </g>
-  <g
-     clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
-     id="g1305">
-    <polyline
-       points="341.18,616.01 341.18,410.48 "
-       style="stroke-width: 1.07; stroke-linecap: butt;"
-       id="polyline1255" />
-    <text
-       x="336.25"
-       y="609.88"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1257">30</text>
-    <text
-       x="336.25"
-       y="563.17"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1259">40</text>
-    <text
-       x="336.25"
-       y="516.45"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1261">50</text>
-    <text
-       x="336.25"
-       y="469.74"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1263">60</text>
-    <text
-       x="336.25"
-       y="423.03"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1265">70</text>
-    <polyline
-       points="338.44,606.67 341.18,606.67 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1267" />
-    <polyline
-       points="338.44,559.96 341.18,559.96 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1269" />
-    <polyline
-       points="338.44,513.25 341.18,513.25 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1271" />
-    <polyline
-       points="338.44,466.53 341.18,466.53 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1273" />
-    <polyline
-       points="338.44,419.82 341.18,419.82 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1275" />
-    <polyline
-       points="341.18,616.01 546.72,616.01 "
-       style="stroke-width: 1.07; stroke-linecap: butt;"
-       id="polyline1277" />
-    <polyline
-       points="350.53,618.75 350.53,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1279" />
-    <polyline
-       points="397.24,618.75 397.24,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1281" />
-    <polyline
-       points="443.95,618.75 443.95,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1283" />
-    <polyline
-       points="490.66,618.75 490.66,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1285" />
-    <polyline
-       points="537.37,618.75 537.37,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1287" />
-    <text
-       x="350.53"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1289">30</text>
-    <text
-       x="397.24"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1291">40</text>
-    <text
-       x="443.95"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1293">50</text>
-    <text
-       x="490.66"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1295">60</text>
-    <text
-       x="537.37"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="11.19px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1297">70</text>
-    <text
-       x="443.95001"
-       y="640.09998"
-       text-anchor="middle"
-       style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="190.07001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1299"><tspan
+  <polyline
+     points="341.18,616.01 341.18,410.48 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1255"
+     clip-path="url(#clipPath1946)" />
+  <text
+     x="336.25"
+     y="609.88"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1257">30</text>
+  <text
+     x="336.25"
+     y="563.16998"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1259">40</text>
+  <text
+     x="336.25"
+     y="516.45001"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1261">50</text>
+  <text
+     x="336.25"
+     y="469.73999"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1263">60</text>
+  <text
+     x="336.25"
+     y="423.03"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1265">70</text>
+  <polyline
+     points="338.44,606.67 341.18,606.67 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1267"
+     clip-path="url(#clipPath1940)" />
+  <polyline
+     points="338.44,559.96 341.18,559.96 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1269"
+     clip-path="url(#clipPath1934)" />
+  <polyline
+     points="338.44,513.25 341.18,513.25 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1271"
+     clip-path="url(#clipPath1928)" />
+  <polyline
+     points="338.44,466.53 341.18,466.53 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1273"
+     clip-path="url(#clipPath1922)" />
+  <polyline
+     points="338.44,419.82 341.18,419.82 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1275"
+     clip-path="url(#clipPath1916)" />
+  <polyline
+     points="341.18,616.01 546.72,616.01 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1277"
+     clip-path="url(#clipPath1910)" />
+  <polyline
+     points="350.53,618.75 350.53,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1279"
+     clip-path="url(#clipPath1904)" />
+  <polyline
+     points="397.24,618.75 397.24,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1281"
+     clip-path="url(#clipPath1898)" />
+  <polyline
+     points="443.95,618.75 443.95,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1283"
+     clip-path="url(#clipPath1892)" />
+  <polyline
+     points="490.66,618.75 490.66,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1285"
+     clip-path="url(#clipPath1886)" />
+  <polyline
+     points="537.37,618.75 537.37,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1287"
+     clip-path="url(#clipPath1880)" />
+  <text
+     x="350.53"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1289">30</text>
+  <text
+     x="397.23999"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1291">40</text>
+  <text
+     x="443.95001"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1293">50</text>
+  <text
+     x="490.66"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1295">60</text>
+  <text
+     x="537.37"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="11.19"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1297">70</text>
+  <text
+     x="443.95001"
+     y="640.09998"
+     text-anchor="middle"
+     style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     textLength="190.07001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1299"><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan47118">MeltR</tspan> Global fit <tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan56762">T</tspan>  at 0.1 mM (°C)</text>
-    <text
-       transform="rotate(-90,416.575,96.675)"
-       text-anchor="middle"
-       style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="149.74001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1301"><tspan
+  <text
+     transform="rotate(-90,416.575,96.675)"
+     text-anchor="middle"
+     style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     textLength="149.74001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1301"><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan62327">MeltWin</tspan><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan59322">T</tspan>  at 0.1 mM (°C)</text>
-    <text
-       x="291.66"
-       y="422.47"
-       style="font-size: 16.00px; font-weight: bold; font-family: &quot;Arimo&quot;;"
-       textLength="10.92px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1303">F</text>
-  </g>
+  <text
+     x="291.66"
+     y="422.47"
+     style="font-weight:bold;font-size:16px;font-family:Arimo"
+     textLength="10.92"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1303">E</text>
   <text
      xml:space="preserve"
      style="font-size:8.34961px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:0.626222;font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre"
@@ -3731,4 +3895,23 @@
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.94142px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595609"
        x="395.20914"
        y="84.660988">m</tspan></text>
+  <path
+     style="fill:#000000;stroke-width:1.24157"
+     d="M 525.75702,24.694648 V 36.16571"
+     id="path985" />
+  <path
+     style="fill:#000000;stroke-width:1.24157"
+     d="m 568.45487,25.013288 0.15931,11.471063"
+     id="path987" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-size:12px;font-family:Arimo;-inkscape-font-specification:'Arimo, Normal';text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157;font-weight:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="547.10596"
+     y="17.843874"
+     id="text1147"><tspan
+       sodipodi:role="line"
+       id="tspan1145"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arimo;-inkscape-font-specification:'Arimo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+       x="547.10596"
+       y="17.843874">mean</tspan></text>
 </svg>
