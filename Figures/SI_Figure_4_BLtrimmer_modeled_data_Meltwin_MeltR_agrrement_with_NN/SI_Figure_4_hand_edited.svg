@@ -25,6 +25,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
+<<<<<<< HEAD
      inkscape:zoom="0.66615538"
      inkscape:cx="-51.039144"
      inkscape:cy="437.5856"
@@ -32,6 +33,15 @@
      inkscape:window-height="1136"
      inkscape:window-x="0"
      inkscape:window-y="0"
+=======
+     inkscape:zoom="0.94208597"
+     inkscape:cx="579.03421"
+     inkscape:cy="835.91098"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+>>>>>>> 3970fc8f56903b5d543775addefdc524abcc9549
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4723"
      inkscape:showpageshadow="2"
@@ -16549,7 +16559,11 @@
      lengthAdjust="spacingAndGlyphs"
      id="text24086">%error Δ<tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+<<<<<<< HEAD
    id="tspan97567">G</tspan>°                     </text>
+=======
+   id="tspan97567">G</tspan>°    (kcal/mol)</text>
+>>>>>>> 3970fc8f56903b5d543775addefdc524abcc9549
   <rect
      x="49.271278"
      y="9.9383078"
@@ -16642,6 +16656,87 @@
        x="425.45331"
        y="562.38562">m</tspan></text>
   <g
+<<<<<<< HEAD
+=======
+     id="g3326"
+     transform="translate(2.3883172,-3.1844229)">
+    <text
+       transform="rotate(-45,1091.3935,3.3400412)"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
+       textLength="81.370003"
+       lengthAdjust="spacingAndGlyphs"
+       id="text24076">2 1/<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan3059">T</tspan>  versus ln <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan100786">C  </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+       x="-428.668"
+       y="746.36151"
+       id="text3063"
+       transform="rotate(-48.862689)"><tspan
+         sodipodi:role="line"
+         id="tspan3061"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+         x="-428.668"
+         y="746.36151">m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;inline-size:5.91326;display:inline;fill:#000000;stroke-width:1.24157"
+       x="-370.13214"
+       y="753.24219"
+       id="text3063-4"
+       transform="rotate(-48.862689,-2.2287121,6.6511939)"><tspan
+         x="-370.13214"
+         y="753.24219"
+         id="tspan17976"><tspan
+           style="font-size:6px"
+           id="tspan17974">t</tspan></tspan></text>
+  </g>
+  <g
+     id="g3326-3"
+     transform="translate(105.38218,-1.781717)">
+    <text
+       transform="rotate(-45,1091.3935,3.3400412)"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
+       textLength="81.370003"
+       lengthAdjust="spacingAndGlyphs"
+       id="text24076-1">2 1/<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan3059-6">T</tspan>  versus ln <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan100786-9">C  </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+       x="-428.668"
+       y="746.36151"
+       id="text3063-5"
+       transform="rotate(-48.862689)"><tspan
+         sodipodi:role="line"
+         id="tspan3061-0"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+         x="-428.668"
+         y="746.36151">m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;inline-size:5.91326;display:inline;fill:#000000;stroke-width:1.24157"
+       x="-370.13214"
+       y="753.24219"
+       id="text3063-4-3"
+       transform="rotate(-48.862689,-2.2287121,6.6511939)"><tspan
+         x="-370.13214"
+         y="753.24219"
+         id="tspan17980"><tspan
+           style="font-size:6px"
+           id="tspan17978">t</tspan></tspan></text>
+  </g>
+  <g
+>>>>>>> 3970fc8f56903b5d543775addefdc524abcc9549
      id="g3326-0"
      transform="rotate(44.417414,1095.294,225.09892)">
     <text
@@ -16676,9 +16771,15 @@
        transform="rotate(-48.862689,-2.2287121,6.6511939)"><tspan
          x="-370.13214"
          y="753.24219"
+<<<<<<< HEAD
          id="tspan17435"><tspan
            style="font-size:6px"
            id="tspan17433">t</tspan></tspan></text>
+=======
+         id="tspan17984"><tspan
+           style="font-size:6px"
+           id="tspan17982">t</tspan></tspan></text>
+>>>>>>> 3970fc8f56903b5d543775addefdc524abcc9549
   </g>
   <text
      xml:space="preserve"
@@ -16695,13 +16796,19 @@
   <text
      xml:space="preserve"
      style="font-style:italic;font-size:11px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+<<<<<<< HEAD
      x="-637.47424"
      y="26.748503"
+=======
+     x="-659.98871"
+     y="20.220928"
+>>>>>>> 3970fc8f56903b5d543775addefdc524abcc9549
      id="text3125-4"
      transform="rotate(-89.75639)"><tspan
        sodipodi:role="line"
        id="tspan3123-7"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+<<<<<<< HEAD
        x="-637.47424"
        y="26.748503">37</tspan></text>
   <g
@@ -18178,4 +18285,8 @@
      lengthAdjust="spacingAndGlyphs"
      id="text444"
      transform="matrix(0.7513554,0,0,0.7513554,18.400681,562.95751)">Q-GCAACG-5'</text>
+=======
+       x="-659.98871"
+       y="20.220928">37</tspan></text>
+>>>>>>> 3970fc8f56903b5d543775addefdc524abcc9549
 </svg>
