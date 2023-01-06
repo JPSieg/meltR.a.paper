@@ -24,9 +24,9 @@
    inkscape:pagecheckerboard="0"
    inkscape:document-units="pt"
    showgrid="false"
-   inkscape:zoom="0.63816568"
-   inkscape:cx="219.37877"
-   inkscape:cy="721.59944"
+   inkscape:zoom="1.2763314"
+   inkscape:cx="452.07696"
+   inkscape:cy="874.77283"
    inkscape:window-width="1846"
    inkscape:window-height="1136"
    inkscape:window-x="0"
@@ -2229,10 +2229,12 @@
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,99.193055,789.28091)"
    text-anchor="end"
-   style="font-size:8.8px;font-family:Arimo"
+   style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
    textLength="25.01"
    lengthAdjust="spacingAndGlyphs"
-   id="text3857">MeltR</text>
+   id="text3857"><tspan
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     id="tspan88971">MeltR</tspan></text>
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,104.42792,794.51578)"
    text-anchor="end"
@@ -2243,10 +2245,12 @@
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,181.56432,789.28091)"
    text-anchor="end"
-   style="font-size:8.8px;font-family:Arimo"
+   style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
    textLength="35.419998"
    lengthAdjust="spacingAndGlyphs"
-   id="text3861">MeltWin</text>
+   id="text3861"><tspan
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     id="tspan90339">MeltWin</tspan></text>
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,186.79919,794.51578)"
    text-anchor="end"
@@ -2257,17 +2261,21 @@
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,263.9278,789.28091)"
    text-anchor="end"
-   style="font-size:8.8px;font-family:Arimo"
+   style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
    textLength="25.01"
    lengthAdjust="spacingAndGlyphs"
-   id="text3865">MeltR</text>
+   id="text3865"><tspan
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     id="tspan95375">MeltR</tspan></text>
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,346.29907,789.28091)"
    text-anchor="end"
-   style="font-size:8.8px;font-family:Arimo"
+   style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
    textLength="35.419998"
    lengthAdjust="spacingAndGlyphs"
-   id="text3869">MeltWin</text>
+   id="text3869"><tspan
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     id="tspan96603">MeltWin</tspan></text>
 <text
    transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,428.66255,789.28091)"
    text-anchor="end"
@@ -2722,10 +2730,14 @@
   <text
      transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,269.16267,794.51578)"
      text-anchor="end"
-     style="font-size:8.8px;font-family:Arimo"
+     style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
      textLength="81.370003"
      lengthAdjust="spacingAndGlyphs"
-     id="text3867">2 1/T   versus ln C</text>
+     id="text3867">2 1/<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan102389">T</tspan>   versus ln <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan100423">C</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:0.584249"
@@ -2756,10 +2768,14 @@
   <text
      transform="matrix(0.5508349,-0.5508349,0.5508349,0.5508349,269.16267,794.51578)"
      text-anchor="end"
-     style="font-size:8.8px;font-family:Arimo"
+     style="font-size:8.8px;font-family:Arimo;text-anchor:end;white-space:pre"
      textLength="81.370003"
      lengthAdjust="spacingAndGlyphs"
-     id="text3867-7">2 1/T   versus ln C</text>
+     id="text3867-7">2 1/<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan103495">T</tspan>   versus ln <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan98491">C</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:0.584249"

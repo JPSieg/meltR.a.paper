@@ -127,14 +127,29 @@ length(unique(df$Helix))
 
 str(df)
 
-#df$Helix = factor(df$Helix)
-#levels(df$Helix)
+unique(df$Helix)
+
+df$Helix = factor(df$Helix,
+                  levels = unique(df$Helix),
+                  labels = c("5'-CGCGCG-3'\n3'-GCGCGC-5'", #1
+                             "5'-ACCGGU-3'\n3'-UGGCCA-5'", #2
+                             "5'-CCAUGG-3'\n3'-GGUACC-5'", #3
+                             "5'-GAUAUAUC-3'\n3'-CUAUAUAG-5'", #4
+                             "5'-GCAAUUGC-3'\n3'-CGUUAACG-5'", #5
+                             "5'-CGAAAGGU-3'\n3'-CGUUUCCA-5'", #6
+                             "5'-CUGAGUC-3'\n3'-GACUCAG-5'", #7
+                             "5'-CGUUGC-3'\n3'-GCAACG-5'", #8
+                             "F-CGAAAGGU-3'\nQ-CGUUUCCA-5'", #9
+                             "F-CUGAGUC-3'\nQ-GACUCAG-5'", #10
+                             "F-CGUUGC-3'\nQ-GCAACG-5'")) #11
+levels(df$Helix)
 
 ggplot(df, aes(x = Program, y = 100*error.dG)) +
   geom_hline(yintercept =  0) +
   geom_line(mapping = aes(group = Helix, color = Helix)) + 
   stat_compare_means(label.x = 2, label.y = 10) +
   scale_color_manual(values = viridis::viridis(11)) +
+  scale_y_continuous(limits = c(-10, 10), breaks = c(-10, -7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10)) +
   #stat_compare_means(comparisons = l.comp) +
   geom_beeswarm(mapping = aes(color = Helix, shape = Helix)) +
   scale_shape_manual(values = c(16, 17, 15, 8, 3,
@@ -147,11 +162,11 @@ ggplot(df, aes(x = Program, y = 100*error.dG)) +
                                    hjust = 1),
         axis.text.y = element_text(color = "black")) +
   xlab("") +
-  ylab("%error \u0394G\u00B037 (kcal/mol)")
+  ylab("%error \u0394G\u00B037")
 
 list.files("Figures")
 
 ggsave("Figures/SI_Figure_4_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/SI_Figure_X_Meltwin_MeltR_agrrement_with_NN.svg",
-       scale = 2,
+       scale = 2.5,
        height = 2,
        width = 4)
