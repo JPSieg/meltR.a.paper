@@ -115,22 +115,31 @@ df$Program = paste(df$Program, df$Method, sep = "\n")
 unique(df$Program)
 
 df$Program = factor(df$Program,
-                    levels = c("MeltR\n1 individual fits", "MeltWin\n1 individual fits",
+                    levels = c("MeltR\n1 Individual fits", "MeltWin\n1 individual fits",
                                "MeltR\n2 Tm versus ln[Ct]", "MeltWin\n2 Tm versus ln[Ct]",
                                "MeltR\n3 Global fit"))
-l.comp = list(c("MeltR\n1 individual fits", "MeltWin\n1 individual fits"),
+l.comp = list(c("MeltR\n1 Individual fits", "MeltWin\n1 individual fits"),
               c("MeltR\n2 Tm versus ln[Ct]", "MeltWin\n2 Tm versus ln[Ct]"),
               c("MeltR\n3 Global fit", "MeltWin\n1 individual fits"),
               c("MeltR\n3 Global fit", "MeltWin\n2 Tm versus ln[Ct]"))
 
 length(unique(df$Helix))
 
+str(df)
+
+#df$Helix = factor(df$Helix)
+#levels(df$Helix)
+
 ggplot(df, aes(x = Program, y = 100*error.dG)) +
   geom_hline(yintercept =  0) +
-  geom_line(mapping = aes(group = Helix)) + 
+  geom_line(mapping = aes(group = Helix, color = Helix)) + 
   stat_compare_means(label.x = 2, label.y = 10) +
+  scale_color_manual(values = viridis::viridis(11)) +
   #stat_compare_means(comparisons = l.comp) +
-  geom_beeswarm() +
+  geom_beeswarm(mapping = aes(color = Helix, shape = Helix)) +
+  scale_shape_manual(values = c(16, 17, 15, 8, 3,
+                                4, 11, 10, 13, 0,
+                                2)) +
   theme_classic() +
   #scale_y_continuous(breaks = c(-10, -5, 0, 5,  10), limits = c(-10, 10)) +
   theme(axis.text.x = element_text(color = "black",

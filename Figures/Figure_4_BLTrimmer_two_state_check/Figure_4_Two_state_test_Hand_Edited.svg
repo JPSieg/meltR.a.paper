@@ -25,9 +25,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="in"
      showgrid="false"
-     inkscape:zoom="0.93918065"
-     inkscape:cx="103.28151"
-     inkscape:cy="153.85751"
+     inkscape:zoom="1.8783613"
+     inkscape:cx="264.05995"
+     inkscape:cy="207.89398"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -1796,11 +1796,13 @@
        x="233.45"
        y="196.22"
        text-anchor="middle"
-       style="font-size:11px;font-family:Arimo;white-space:pre"
+       style="font-size:11px;font-family:Arimo;white-space:pre;text-anchor:middle"
        textLength="156.73"
        lengthAdjust="spacingAndGlyphs"
        id="text1525"
-       transform="matrix(0.80924819,0,0,0.82151585,3.2167066,53.328256)">%Difference in ΔH° between</text>
+       transform="matrix(0.80924819,0,0,0.82151585,3.2167066,53.328256)">%Difference in Δ<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan772">H</tspan>° between</text>
     <text
        x="233.45"
        y="208.10001"
@@ -1824,7 +1826,7 @@
        textLength="61.990002"
        lengthAdjust="spacingAndGlyphs"
        id="text279-8"
-       transform="translate(40.39054,-44.884995)">Non two-state</text>
+       transform="translate(40.39054,-44.884995)">Non-two-state</text>
     <text
        x="5.8099999"
        y="218.3"
@@ -2129,7 +2131,7 @@
        transform="translate(-134.65168,-27.604603)">Two-state</text>
     <text
        xml:space="preserve"
-       style="font-size:5.62254px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:1.05423"
+       style="font-size:5.62254px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;stroke-width:1.05423;white-space:pre"
        x="55.791611"
        y="37.643055"
        id="text125262"><tspan
@@ -2137,7 +2139,9 @@
          id="tspan125260"
          style="stroke-width:1.05423"
          x="55.791611"
-         y="37.643055">ΔT</tspan></text>
+         y="37.643055">Δ<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.62254px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan774">T</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.62254px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:1.05423"
@@ -2159,7 +2163,9 @@
          id="tspan125260-0"
          style="stroke-width:1.05423"
          x="272.21094"
-         y="36.430367">ΔT</tspan></text>
+         y="36.430367">Δ<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.62254px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan776">T</tspan></tspan></text>
     <text
        x="5.1399999"
        y="15.3"
@@ -2200,7 +2206,7 @@
          textLength="61.990002"
          lengthAdjust="spacingAndGlyphs"
          id="text287"
-         transform="matrix(0.91087564,0,0,0.91087564,-42.926719,46.70553)">Non two-state</text>
+         transform="matrix(0.91087564,0,0,0.91087564,-42.926719,46.70553)">Non-two-state</text>
     </g>
     <text
        xml:space="preserve"

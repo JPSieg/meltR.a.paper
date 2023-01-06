@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.58843722"
-     inkscape:cx="403.61145"
-     inkscape:cy="558.25836"
+     inkscape:zoom="0.8321759"
+     inkscape:cx="112.35605"
+     inkscape:cy="636.28375"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -209,11 +209,115 @@
            id="rect1948" />
       </g>
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1047">
+      <g
+         id="g1051">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1049" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1053">
+      <g
+         id="g1057">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1055" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1059">
+      <g
+         id="g1063">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1061" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1065">
+      <g
+         id="g1069">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1067" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1071">
+      <g
+         id="g1075">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1073" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1077">
+      <g
+         id="g1081">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1079" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1083">
+      <g
+         id="g1087">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1085" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1089">
+      <g
+         id="g1093">
+        <rect
+           x="0"
+           y="0"
+           width="572.40002"
+           height="648"
+           id="rect1091" />
+      </g>
+    </clipPath>
   </defs>
   <rect
      width="100%"
      height="100%"
-     style="stroke: none; fill: #FFFFFF;"
+     style="stroke:none;fill:#FFFFFF"
      id="rect6" />
   <defs
      id="defs11">
@@ -748,12 +852,12 @@
        x="148.08"
        y="82.269997"
        text-anchor="middle"
-       style="font-size:8.8px;font-family:Arimo;fill:#1a1a1a;text-anchor:middle;white-space:pre"
+       style="font-size:8.8px;font-family:Arimo;text-anchor:middle;white-space:pre;fill:#1a1a1a"
        textLength="28.43"
        lengthAdjust="spacingAndGlyphs"
        id="text173">Δ<tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan107295">G</tspan>°37</text>
+   id="tspan107295">G</tspan>°   </text>
   </g>
   <g
      clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
@@ -2004,7 +2108,7 @@
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan1063">T</tspan>   versus ln <tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan1065">C</tspan>  </text>
+   id="tspan1065">C</tspan></text>
     <text
        x="6.09"
        y="179.47"
@@ -3239,120 +3343,124 @@
        style="stroke-width: 1.07; stroke: #7AD151; stroke-linecap: butt;"
        id="polyline1105" />
   </g>
-  <g
-     clip-path="url(#cpMC4wMHw1NzIuNDB8MC4wMHw2NDguMDA=)"
-     id="g1143">
-    <polyline
-       points="56.57,616.01 56.57,410.48 "
-       style="stroke-width: 1.07; stroke-linecap: butt;"
-       id="polyline1109" />
-    <text
-       x="51.64"
-       y="578.74"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="14.36px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1111">-10</text>
-    <text
-       x="51.64"
-       y="516.45"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="8.77px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1113">-8</text>
-    <text
-       x="51.64"
-       y="454.17"
-       text-anchor="end"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="8.77px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1115">-6</text>
-    <polyline
-       points="53.83,575.53 56.57,575.53 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1117" />
-    <polyline
-       points="53.83,513.25 56.57,513.25 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1119" />
-    <polyline
-       points="53.83,450.96 56.57,450.96 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1121" />
-    <polyline
-       points="56.57,616.01 262.10,616.01 "
-       style="stroke-width: 1.07; stroke-linecap: butt;"
-       id="polyline1123" />
-    <polyline
-       points="97.06,618.75 97.06,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1125" />
-    <polyline
-       points="159.34,618.75 159.34,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1127" />
-    <polyline
-       points="221.62,618.75 221.62,616.01 "
-       style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-       id="polyline1129" />
-    <text
-       x="97.06"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="14.36px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1131">-10</text>
-    <text
-       x="159.34"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="8.77px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1133">-8</text>
-    <text
-       x="221.62"
-       y="627.36"
-       text-anchor="middle"
-       style="font-size: 8.80px; font-family: &quot;Arimo&quot;;"
-       textLength="8.77px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1135">-6</text>
-    <text
-       x="159.34"
-       y="640.09998"
-       text-anchor="middle"
-       style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="182.17999"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1137"><tspan
+  <polyline
+     points="56.57,616.01 56.57,410.48 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1109"
+     clip-path="url(#clipPath1089)" />
+  <text
+     x="51.639999"
+     y="578.73999"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="14.36"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1111">-10</text>
+  <text
+     x="51.639999"
+     y="516.45001"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="8.7700005"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1113">-8</text>
+  <text
+     x="51.639999"
+     y="454.17001"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="8.7700005"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1115">-6</text>
+  <polyline
+     points="53.83,575.53 56.57,575.53 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1117"
+     clip-path="url(#clipPath1083)" />
+  <polyline
+     points="53.83,513.25 56.57,513.25 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1119"
+     clip-path="url(#clipPath1077)" />
+  <polyline
+     points="53.83,450.96 56.57,450.96 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1121"
+     clip-path="url(#clipPath1071)" />
+  <polyline
+     points="56.57,616.01 262.10,616.01 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1123"
+     clip-path="url(#clipPath1065)" />
+  <polyline
+     points="97.06,618.75 97.06,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1125"
+     clip-path="url(#clipPath1059)" />
+  <polyline
+     points="159.34,618.75 159.34,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1127"
+     clip-path="url(#clipPath1053)" />
+  <polyline
+     points="221.62,618.75 221.62,616.01 "
+     style="stroke:#333333;stroke-width:1.07;stroke-linecap:butt"
+     id="polyline1129"
+     clip-path="url(#clipPath1047)" />
+  <text
+     x="97.059998"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="14.36"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1131">-10</text>
+  <text
+     x="159.34"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="8.7700005"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1133">-8</text>
+  <text
+     x="221.62"
+     y="627.35999"
+     text-anchor="middle"
+     style="font-size:8.8px;font-family:Arimo"
+     textLength="8.7700005"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1135">-6</text>
+  <text
+     x="159.34"
+     y="640.09998"
+     text-anchor="middle"
+     style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     textLength="182.17999"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1137"><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan45282">MeltR</tspan> Global fit Δ<tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan42748">G</tspan>°37 (kcal/mol)</text>
-    <text
-       transform="rotate(-90,272.685,240.565)"
-       text-anchor="middle"
-       style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="141.85001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1139"><tspan
+   id="tspan42748">G</tspan>°     (kcal/mol)</text>
+  <text
+     transform="rotate(-90,272.685,240.565)"
+     text-anchor="middle"
+     style="font-size:11px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     textLength="141.85001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1139"><tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
    id="tspan27188">MeltWin</tspan> Δ<tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan33818">G</tspan>°37 (kcal/mol)</text>
-    <text
-       x="6.63"
-       y="422.47"
-       style="font-size: 16.00px; font-weight: bold; font-family: &quot;Arimo&quot;;"
-       textLength="13.27px"
-       lengthAdjust="spacingAndGlyphs"
-       id="text1141">D</text>
-  </g>
+   id="tspan33818">G</tspan>°     (kcal/mol)</text>
+  <text
+     x="6.6300001"
+     y="422.47"
+     style="font-weight:bold;font-size:16px;font-family:Arimo"
+     textLength="13.27"
+     lengthAdjust="spacingAndGlyphs"
+     id="text1141">D</text>
   <defs
      id="defs1148">
     <clipPath
@@ -3932,12 +4040,47 @@
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
-     x="263.12888"
-     y="359.16248"
+     x="268.31107"
+     y="359.72577"
      id="text1069-2"><tspan
        sodipodi:role="line"
        id="tspan1067-3"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
-       x="263.12888"
-       y="359.16248">t</tspan></text>
+       x="268.31107"
+       y="359.72577">t</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-size:6.54292px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;fill:#000000;stroke-width:1.24157;font-weight:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre"
+     x="-510.0676"
+     y="47.804493"
+     id="text1199"
+     transform="rotate(-88.439456)"><tspan
+       sodipodi:role="line"
+       id="tspan1197"
+       style="stroke-width:1.24157;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:6.54291988px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="-510.0676"
+       y="47.804493">37</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-size:6.54292px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157;font-weight:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="179.01385"
+     y="643.43127"
+     id="text1199-3"
+     transform="rotate(-0.27080497)"><tspan
+       sodipodi:role="line"
+       id="tspan1197-3"
+       style="stroke-width:1.24157;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:6.54291988px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="179.01385"
+       y="643.43127">37</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-size:6.54292px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+     x="158.56398"
+     y="83.591095"
+     id="text1230"><tspan
+       sodipodi:role="line"
+       id="tspan1228"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.54292px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
+       x="158.56398"
+       y="83.591095">37</tspan></text>
 </svg>
