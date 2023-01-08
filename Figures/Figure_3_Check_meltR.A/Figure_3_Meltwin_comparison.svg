@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.8321759"
-     inkscape:cx="112.35605"
-     inkscape:cy="636.28375"
+     inkscape:zoom="6.6574072"
+     inkscape:cx="101.76635"
+     inkscape:cy="166.95689"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -541,13 +541,14 @@
        style="stroke-width: 0.21; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2B8D8A;"
        id="rect78" />
     <text
-       x="75.66"
+       x="75.660004"
        y="122.45"
        text-anchor="middle"
-       style="font-size: 11.04px; font-family: &quot;Arimo&quot;;"
-       textLength="17.50px"
+       style="font-size:11.04px;font-family:Arimo"
+       textLength="17.5"
        lengthAdjust="spacingAndGlyphs"
-       id="text80">2%</text>
+       id="text80"
+       transform="matrix(1.6841567,0,0,1,-51.906331,0)">2.0%</text>
     <text
        x="75.66"
        y="103.23"

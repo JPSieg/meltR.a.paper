@@ -7,7 +7,7 @@
    version="1.1"
    id="svg4723"
    sodipodi:docname="SI_Figure_4_hand_edited.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    inkscape:export-filename="SI_Figure_4_hand_edited.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600"
@@ -25,14 +25,17 @@
    inkscape:document-units="pt"
    showgrid="false"
    inkscape:zoom="1.2763314"
-   inkscape:cx="452.07696"
-   inkscape:cy="874.77283"
-   inkscape:window-width="1846"
-   inkscape:window-height="1136"
-   inkscape:window-x="0"
-   inkscape:window-y="0"
+   inkscape:cx="352.96476"
+   inkscape:cy="244.84237"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg4723" />
+   inkscape:current-layer="svg4723"
+   inkscape:showpageshadow="2"
+   inkscape:deskcolor="#d1d1d1" />
+
  HEAD
      inkscape:zoom=&quot;0.66615538&quot;
      inkscape:cx=&quot;-51.039144&quot;
@@ -1285,6 +1288,84 @@
        width="549.82001"
        height="260.97"
        id="rect17" />
+  </clipPath>
+  <clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath12805">
+    <g
+       id="g12809">
+      <rect
+         x="0"
+         y="0"
+         width="572.40002"
+         height="572.40002"
+         id="rect12807" />
+    </g>
+  </clipPath>
+  <clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath12799">
+    <g
+       id="g12803">
+      <rect
+         x="0"
+         y="0"
+         width="572.40002"
+         height="572.40002"
+         id="rect12801" />
+    </g>
+  </clipPath>
+  <clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath12793">
+    <g
+       id="g12797">
+      <rect
+         x="0"
+         y="0"
+         width="572.40002"
+         height="572.40002"
+         id="rect12795" />
+    </g>
+  </clipPath>
+  <clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath12787">
+    <g
+       id="g12791">
+      <rect
+         x="0"
+         y="0"
+         width="572.40002"
+         height="572.40002"
+         id="rect12789" />
+    </g>
+  </clipPath>
+  <clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath12781">
+    <g
+       id="g12785">
+      <rect
+         x="0"
+         y="0"
+         width="572.40002"
+         height="572.40002"
+         id="rect12783" />
+    </g>
+  </clipPath>
+  <clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath12775">
+    <g
+       id="g12779">
+      <rect
+         x="0"
+         y="0"
+         width="572.40002"
+         height="572.40002"
+         id="rect12777" />
+    </g>
   </clipPath>
 </defs>
 <g
@@ -2725,6 +2806,20 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.23199px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.584249"
      x="-388.26144"
      y="20.960194">37</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-size:7.78997px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;stroke-width:0.584249"
+   x="174.09393"
+   y="552.159"
+   id="text7350-5-3"
+   transform="rotate(1.5588467)"
+   inkscape:transform-center-x="3.7396013"
+   inkscape:transform-center-y="3.947357"><tspan
+     sodipodi:role="line"
+     id="tspan7348-7-8"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.23199px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.584249"
+     x="174.09393"
+     y="552.159">37</tspan></text>
 <g
    id="g66691">
   <text
@@ -2800,18 +2895,6 @@
        x="49.524433"
        y="439.18573">t</tspan></text>
 </g>
-<text
-   xml:space="preserve"
-   style="font-style:italic;font-size:11px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
-   x="147.44983"
-   y="562.74805"
-   id="text3125-8"
-   transform="rotate(-1.9603903)"><tspan
-     sodipodi:role="line"
-     id="tspan3123-6"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.24157"
-     x="147.44983"
-     y="562.74805">37</tspan></text>
 <defs
    id="defs11">
   <clipPath
@@ -6600,6 +6683,129 @@
      r="2.8399999"
      style="fill:#7ad151;stroke:#7ad151;stroke-width:1.42"
      id="circle5752" />
+</g>
+<g
+   id="g12996"
+   transform="translate(-575.75533,-389.27824)">
+  <text
+     x="457.66"
+     y="446.70999"
+     style="font-size:11px;font-family:Arimo;white-space:pre"
+     textLength="31.280001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text12540"
+     transform="translate(163.14104,-37.269289)"><tspan
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan13177">MeltR</tspan></text>
+  <text
+     x="457.66"
+     y="458.59"
+     style="font-size:11px;font-family:Arimo;white-space:pre"
+     textLength="42.48"
+     lengthAdjust="spacingAndGlyphs"
+     id="text12542"
+     transform="translate(163.14104,-37.269289)">method</text>
+  <line
+     x1="466.29999"
+     y1="480.76999"
+     x2="466.29999"
+     y2="466.94"
+     style="fill:none;stroke:#440154;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     id="line12544"
+     clip-path="url(#clipPath12805)"
+     transform="translate(163.14104,-37.269289)" />
+  <circle
+     cx="466.29999"
+     cy="473.85001"
+     r="2.8399999"
+     style="fill:#440154;stroke:#440154;stroke-width:1.42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     id="circle12546"
+     clip-path="url(#clipPath12799)"
+     transform="translate(163.14104,-37.269289)" />
+  <line
+     x1="466.29999"
+     y1="498.04999"
+     x2="466.29999"
+     y2="484.22"
+     style="fill:none;stroke:#2a788e;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     id="line12548"
+     clip-path="url(#clipPath12793)"
+     transform="translate(163.14104,-37.269289)" />
+  <circle
+     cx="466.29999"
+     cy="491.13"
+     r="2.8399999"
+     style="fill:#2a788e;stroke:#2a788e;stroke-width:1.42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     id="circle12550"
+     clip-path="url(#clipPath12787)"
+     transform="translate(163.14104,-37.269289)" />
+  <line
+     x1="466.29999"
+     y1="515.33002"
+     x2="466.29999"
+     y2="501.5"
+     style="fill:none;stroke:#7ad151;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     id="line12552"
+     clip-path="url(#clipPath12781)"
+     transform="translate(163.14104,-37.269289)" />
+  <circle
+     cx="466.29999"
+     cy="508.41"
+     r="2.8399999"
+     style="fill:#7ad151;stroke:#7ad151;stroke-width:1.42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     id="circle12554"
+     clip-path="url(#clipPath12775)"
+     transform="translate(163.14104,-37.269289)" />
+  <text
+     x="480.42001"
+     y="477.06"
+     style="font-size:8.8px;font-family:Arimo;white-space:pre"
+     textLength="67.470001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text12556"
+     transform="translate(163.14104,-37.269289)">1 Individual fits</text>
+  <text
+     x="480.42001"
+     y="494.34"
+     style="font-size:8.8px;font-family:Arimo;white-space:pre"
+     textLength="81.370003"
+     lengthAdjust="spacingAndGlyphs"
+     id="text12558"
+     transform="translate(163.14104,-37.269289)">2 1/<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan12969">T</tspan>    versus ln <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.8px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan12967">C</tspan>  </text>
+  <text
+     x="480.42001"
+     y="511.62"
+     style="font-size:8.8px;font-family:Arimo;white-space:pre"
+     textLength="48.25"
+     lengthAdjust="spacingAndGlyphs"
+     id="text12560"
+     transform="translate(163.14104,-37.269289)">3 Global fit</text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+     x="722.18036"
+     y="459.53735"
+     id="text12973"><tspan
+       sodipodi:role="line"
+       id="tspan12971"
+       style="stroke-width:1.24157"
+       x="722.18036"
+       y="459.53735">t</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.79998px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.24157"
+     x="666.80383"
+     y="459.71313"
+     id="text12977"><tspan
+       sodipodi:role="line"
+       id="tspan12975"
+       style="stroke-width:1.24157"
+       x="666.80383"
+       y="459.71313">m</tspan></text>
 </g>
 <polyline
    points="37.96,251.23 37.96,8.46 "
@@ -18041,6 +18247,7 @@
    lengthAdjust="spacingAndGlyphs"
    id="text9326"
    transform="translate(0,-2.98)">D</text>
+
 °                     <text
    xml:space="preserve"
    style="font-style:italic;font-size:8.02298px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:0.905554"
