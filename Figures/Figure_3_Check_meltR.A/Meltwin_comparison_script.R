@@ -48,7 +48,6 @@ df.M1 = cbind(df.MeltR %>%
                 arrange(Helix) %>%
                 select(Helix, H, S, G, Hmin, Hmax, Smin, Smax, Gmin, Gmax, Tm_at_0.1mM, Tmin, Tmax),
               df.Meltwin %>%
-                filter(Sequence != "UAUAUAUA") %>%
                 filter(Method == "1 individual fits") %>%
                 arrange(Sequence) %>%
                 select(dH, SE.dH, dS, SE.dS, dG, SE.dG, Tm))
@@ -59,7 +58,6 @@ df.M2 = cbind(df.MeltR %>%
                 arrange(Helix) %>%
                 select(Helix, H, S, G, Hmin, Hmax, Smin, Smax, Gmin, Gmax, Tm_at_0.1mM, Tmin, Tmax),
               df.Meltwin %>%
-                filter(Sequence != "UAUAUAUA") %>%
                 filter(Method == "2 Tm versus ln[Ct]") %>%
                 arrange(Sequence) %>%
                 select(dH, SE.dH, dS, SE.dS, dG, SE.dG, Tm))
@@ -178,7 +176,7 @@ for (i in 1:length(Comparisons)){
   if (Comparisons[[i]][2] == 1){method = "1 individual fits"}
   if (Comparisons[[i]][2] == 2){method = "2 Tm versus ln[Ct]"}
   
-  df.method.Meltwin = df.Meltwin %>% filter(Method == method) %>% arrange(Sequence) %>% filter(Sequence != "UAUAUAUA")
+  df.method.Meltwin = df.Meltwin %>% filter(Method == method) %>% arrange(Sequence)
   
   H = mean(100*abs(df.method.MeltR$dH - df.method.Meltwin$dH)/abs((df.method.MeltR$dH + df.method.Meltwin$dH)/2))
   S = mean(100*abs(df.method.MeltR$dS - df.method.Meltwin$dS)/abs((df.method.MeltR$dS + df.method.Meltwin$dS)/2))

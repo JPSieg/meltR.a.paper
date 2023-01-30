@@ -11,14 +11,14 @@ head(df.index)
 list.df = {}
 
 for (i in 1:nrow(df.index)){
-  #print(i)
+  print(i)
   path = paste("data-raw", df.index$File[i], sep = "/")
   
   Con = file(path)
   Lines = readLines(Con)
   close(Con)
   
-  start = which(Lines == paste("CORRECTED ABSORBANCES @ ", df.index$Wavelength[i],".0 nm", sep = ""))
+  start = which(gsub(",", "", Lines) == paste("CORRECTED ABSORBANCES @ ", df.index$Wavelength[i],".0 nm", sep = ""))
   Lines = Lines[(start+5):(length(Lines))]
   
   Cell = as.integer(strsplit(df.index$Cell[i], split = " ")[[1]][2]) + 1 

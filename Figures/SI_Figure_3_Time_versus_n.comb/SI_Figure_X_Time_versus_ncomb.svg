@@ -26,9 +26,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.95930819"
-     inkscape:cx="254.34996"
-     inkscape:cy="102.67816"
+     inkscape:zoom="0.67833333"
+     inkscape:cx="575.67568"
+     inkscape:cy="683.29239"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -3823,20 +3823,24 @@
        lengthAdjust="spacingAndGlyphs"
        id="text89875">1e+05</text>
     <text
-       x="381.64"
-       y="249.24"
+       x="381.64001"
+       y="249.24001"
        text-anchor="middle"
-       style="font-size: 11.00px; font-family: &quot;Nimbus Sans&quot;;"
-       textLength="135.84px"
+       style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
+       textLength="135.84"
        lengthAdjust="spacingAndGlyphs"
-       id="text89877">Number of combinations</text>
+       id="text89877"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224660">Number of combinations</tspan></text>
     <text
-       transform="translate(13.50,115.32) rotate(-90)"
+       transform="rotate(-90,64.41,50.91)"
        text-anchor="middle"
-       style="font-size: 11.00px; font-family: &quot;Nimbus Sans&quot;;"
-       textLength="102.20px"
+       style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
+       textLength="102.2"
        lengthAdjust="spacingAndGlyphs"
-       id="text89879">System time (min)</text>
+       id="text89879"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224658">System time (min)</tspan></text>
     <text
        x="6.18"
        y="17.47"
@@ -5348,19 +5352,25 @@
        x="196.24001"
        y="570.66998"
        text-anchor="middle"
-       style="font-size:11px;font-family:'Nimbus Sans'"
+       style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
        textLength="135.84"
        lengthAdjust="spacingAndGlyphs"
-       id="text90398">Number of combinations</text>
+       id="text90398"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224664">Number of combinations</tspan></text>
     <text
        transform="rotate(-90,209.05,195.55)"
        text-anchor="middle"
        style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
        textLength="79.809998"
        lengthAdjust="spacingAndGlyphs"
-       id="text90400">Δ<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan1469">H</tspan>° (kcal/mol)</text>
+       id="text90400"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224666">Δ</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan1469">H</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224668">° (kcal/mol)</tspan></text>
     <rect
        x="237.95"
        y="464.69"
@@ -6906,20 +6916,26 @@
      x="559.03998"
      y="570.66998"
      text-anchor="middle"
-     style="font-size:11px;font-family:'Nimbus Sans'"
+     style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
      textLength="135.84"
      lengthAdjust="spacingAndGlyphs"
      id="text90934"
-     transform="matrix(0.98686963,0,0,0.99254953,0.07210806,1.9566417)">Number of combinations</text>
+     transform="matrix(0.98686963,0,0,0.99254953,0.07210806,1.9566417)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan224662">Number of combinations</tspan></text>
   <text
      transform="matrix(0,-0.99254953,0.98686963,0,368.66791,403.54218)"
      text-anchor="middle"
      style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
      textLength="83.07"
      lengthAdjust="spacingAndGlyphs"
-     id="text90936">Δ<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan1560">S</tspan>° (cal/mol/K)</text>
+     id="text90936"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan224680">Δ</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan1560">S</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan224682">° (cal/mol/K)</tspan></text>
   <text
      x="365.85999"
      y="274.62"
@@ -8780,19 +8796,25 @@
        x="197.63"
        y="892.09998"
        text-anchor="middle"
-       style="font-size:11px;font-family:'Nimbus Sans'"
+       style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
        textLength="135.84"
        lengthAdjust="spacingAndGlyphs"
-       id="text91442">Number of combinations</text>
+       id="text91442"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224674">Number of combinations</tspan></text>
     <text
        transform="rotate(-90,369.765,356.265)"
        text-anchor="middle"
        style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
        textLength="94.059998"
        lengthAdjust="spacingAndGlyphs"
-       id="text91444">Δ<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan1562">G</tspan>°     (kcal/mol)</text>
+       id="text91444"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224670">Δ</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan1562">G</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan224672">°     (kcal/mol)</tspan></text>
     <text
        x="6.6300001"
        y="596.04999"
@@ -10273,11 +10295,13 @@
      x="561.64001"
      y="892.09998"
      text-anchor="middle"
-     style="font-size:11px;font-family:'Nimbus Sans'"
+     style="font-size:11px;font-family:'Nimbus Sans';text-anchor:middle;white-space:pre"
      textLength="135.84"
      lengthAdjust="spacingAndGlyphs"
      id="text91958"
-     transform="matrix(0.98686963,0,0,0.99254953,0.07210806,1.9566417)">Number of combinations</text>
+     transform="matrix(0.98686963,0,0,0.99254953,0.07210806,1.9566417)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan224676">Number of combinations</tspan></text>
   <text
      transform="matrix(0,-0.99254953,0.98686963,0,368.66791,722.57738)"
      text-anchor="middle"
@@ -10285,8 +10309,10 @@
      textLength="101.94"
      lengthAdjust="spacingAndGlyphs"
      id="text91960"><tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-   id="tspan1595">T</tspan>    at 0.1 mM (°C)</text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan1595">T</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1456px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan224678">    at 0.1 mM (°C)</tspan></text>
   <text
      x="365.45999"
      y="596.04999"
@@ -10322,25 +10348,25 @@
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.8868px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.22879"
-     x="-736.98315"
-     y="82.667046"
+     x="-735.98383"
+     y="84.524574"
      id="text1566"
      transform="matrix(0.09036896,-0.99874654,0.99303117,0.09088909,0,0)"><tspan
        sodipodi:role="line"
        id="tspan1564"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.91764px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.22879"
-       x="-736.98315"
-       y="82.667046">37</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.22879"
+       x="-735.98383"
+       y="84.524574">37</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.8868px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.22879"
-     x="-724.84192"
-     y="438.91052"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;fill:#000000;stroke-width:1.22879"
+     x="-723.49463"
+     y="438.50955"
      id="text1566-4"
      transform="matrix(0.09036896,-0.99874654,0.99303117,0.09088909,0,0)"><tspan
        sodipodi:role="line"
        id="tspan1564-1"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.91764px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.22879"
-       x="-724.84192"
-       y="438.91052">m</tspan></text>
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.22879"
+       x="-723.49463"
+       y="438.50955">m</tspan></text>
 </svg>

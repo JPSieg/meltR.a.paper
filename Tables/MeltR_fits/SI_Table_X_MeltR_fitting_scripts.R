@@ -201,7 +201,7 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
   geom_vline(xintercept = c(5, 40))
 
 
-fit = meltR.A(df %>% filter(Sample !=  "9"),
+fit = meltR.A(df,
               NucAcid = c("RNA", "UAUAUAUA"),
               concT = 40,
               Mmodel = "Homoduplex.2State",
@@ -216,6 +216,9 @@ BL.fit = BLTrimmer(fit,
                    Save_results = "all",
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "CROWD DR17")
+
+list.df[[6]] = BL.fit$Ensemble.energies
+list.df[[6]]$Helix =  "UAUAUAUA"
 
 ####Helix A####
 
@@ -250,8 +253,8 @@ BL.fit = BLTrimmer(fit,
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix A")
 
-list.df[[6]] = BL.fit$Ensemble.energies
-list.df[[6]]$Helix =  "CGAAAGGU/ACCUUUCG"
+list.df[[7]] = BL.fit$Ensemble.energies
+list.df[[7]]$Helix =  "CGAAAGGU/ACCUUUCG"
 
 ####Helix C####
 
@@ -287,8 +290,8 @@ BL.fit = BLTrimmer(fit,
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix C")
 
-list.df[[7]] = BL.fit$Ensemble.energies
-list.df[[7]]$Helix = "CUGAGUC/GACUCAG"
+list.df[[8]] = BL.fit$Ensemble.energies
+list.df[[8]]$Helix = "CUGAGUC/GACUCAG"
 
 ####Helix D####
 
@@ -324,8 +327,8 @@ BL.fit = BLTrimmer(fit,
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix D")
 
-list.df[[8]] = BL.fit$Ensemble.energies
-list.df[[8]]$Helix = "CGUUGC/GCAACG"
+list.df[[9]] = BL.fit$Ensemble.energies
+list.df[[9]]$Helix = "CGUUGC/GCAACG"
 
 ####Helix A labeled####
 
@@ -361,8 +364,8 @@ BL.fit = BLTrimmer(fit,
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix A labeled")
 
-list.df[[9]] = BL.fit$Ensemble.energies
-list.df[[9]]$Helix = "FAMCGAAAGGU/ACCUUUCGBHQ1"
+list.df[[10]] = BL.fit$Ensemble.energies
+list.df[[10]]$Helix = "FAMCGAAAGGU/ACCUUUCGBHQ1"
 
 ####Helix C labeled####
 
@@ -398,8 +401,8 @@ BL.fit = BLTrimmer(fit,
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix C labeled")
 
-list.df[[10]] = BL.fit$Ensemble.energies
-list.df[[10]]$Helix = "FAMCUGAGUC/GACUCAGBHQ1"
+list.df[[11]] = BL.fit$Ensemble.energies
+list.df[[11]]$Helix = "FAMCUGAGUC/GACUCAGBHQ1"
 
 ####Helix D labeled####
 
@@ -435,8 +438,8 @@ BL.fit = BLTrimmer(fit,
                    file_path = "Tables/MeltR_fits/Fit_data",
                    file_prefix = "Helix C labeled")
 
-list.df[[11]] = BL.fit$Ensemble.energies
-list.df[[11]]$Helix = "FAMCGUUGC/GCAACGBHQ1"
+list.df[[12]] = BL.fit$Ensemble.energies
+list.df[[12]]$Helix = "FAMCGUUGC/GCAACGBHQ1"
 
 ####Consolidate results####
 

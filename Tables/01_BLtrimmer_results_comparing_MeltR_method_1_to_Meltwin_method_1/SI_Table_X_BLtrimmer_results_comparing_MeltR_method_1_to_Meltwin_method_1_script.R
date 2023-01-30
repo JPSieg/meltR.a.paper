@@ -21,8 +21,7 @@ Tm1 = paste(df1$Tm_at_0.1mM, " (", df1$CI95.Tm_at_0.1mM, ")", sep = "")
 
 df.Meltwin = df.Meltwin %>%
   filter(Method == "1 individual fits") %>%
-  arrange(Sequence) %>%
-  filter(Sequence != "UAUAUAUA")
+  arrange(Sequence) 
 
 H.MW = paste(df.Meltwin$dH, " (\u00B1", df.Meltwin$SE.dH, ")", sep = "")
 S.MW = paste(df.Meltwin$dS, " (\u00B1", df.Meltwin$SE.dS, ")", sep = "")

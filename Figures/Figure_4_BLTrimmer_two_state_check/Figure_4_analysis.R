@@ -24,7 +24,7 @@ fit = meltR.A(df,
         file_path = "Figures/Figure_4_BLTrimmer_two_state_check",
         file_prefix = "Multistate")
 
-Trim = BLTrimmer(fit, n.combinations = 1000, Save_results = "all",
+Trim = BLTrimmer(meltR.A.fit = fit, n.combinations = 1000, Save_results = "all",
                  file_path = "Figures/Figure_4_BLTrimmer_two_state_check",
                  file_prefix = "Multistate",
                  memory.light = F)

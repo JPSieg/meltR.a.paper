@@ -20,8 +20,7 @@ G3 = paste(df3$dG, " (", df3$CI95.dG, ")", sep = "")
 Tm3 = paste(df3$Tm_at_0.1mM, " (", df3$CI95.Tm_at_0.1mM, ")", sep = "") 
 
 df.Meltwin = df.Meltwin %>%
-  arrange(Sequence) %>%
-  filter(Sequence != "UAUAUAUA")
+  arrange(Sequence) 
 
 df.Meltwin1 =  df.Meltwin %>% filter(Method == "1 individual fits")
 

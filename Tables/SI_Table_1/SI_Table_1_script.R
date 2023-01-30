@@ -18,9 +18,9 @@ S1 = paste(df1$dS, " (", df1$CI95.dS, ")", sep = "")
 G1 = paste(df1$dG, " (", df1$CI95.dG, ")", sep = "") 
 Tm1 = paste(df1$Tm_at_0.1mM, " (", df1$CI95.Tm_at_0.1mM, ")", sep = "") 
 
-df.1 = data.frame(H1, S1, G1, Tm1)
+df.1 = data.frame(Helix, H1, S1, G1, Tm1)
 
-colnames(df.1) = paste("MeltR", colnames(df.1))
+colnames(df.1) = c("Helix", paste("MeltR", colnames(df.1)[-1]))
 
 ####MeltR method 2####
 
@@ -52,7 +52,6 @@ colnames(df.3) = paste("MeltR", colnames(df.3))
 
 df4 = df.Meltwin %>%
   filter(Method == "1 individual fits") %>%
-  filter(Sequence != "UAUAUAUA") %>%
   arrange(Sequence)
 
 H1 = paste(df4$dH, " (", df4$SE.dH, ")", sep = "") 
@@ -68,7 +67,6 @@ colnames(df.4) = paste("MeltWin", colnames(df.4))
 
 df5 = df.Meltwin %>%
   filter(Method == "2 Tm versus ln[Ct]") %>%
-  filter(Sequence != "UAUAUAUA") %>%
   arrange(Sequence)
 
 H2 = paste(df5$dH, " (", df5$SE.dH, ")", sep = "") 
@@ -83,7 +81,7 @@ colnames(df.5) = paste("MeltWin", colnames(df.5))
 ####Consolidate data####
 
 df.Table = bind_cols(df.1, df.2, df.3, df.4, df.5) %>%
-  select("MeltR H1", "MeltR H2", "MeltR H3", "MeltWin H1", "MeltWin H2",
+  select("Helix", "MeltR H1", "MeltR H2", "MeltR H3", "MeltWin H1", "MeltWin H2",
          "MeltR S1", "MeltR S2", "MeltR S3", "MeltWin S1", "MeltWin S2",
          "MeltR G1", "MeltR G2", "MeltR G3", "MeltWin G1", "MeltWin G2",
          "MeltR Tm1", "MeltR Tm2", "MeltR Tm3", "MeltWin Tm1", "MeltWin Tm2")

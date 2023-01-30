@@ -22,8 +22,7 @@ Tm2 = paste(df2$Tm_at_0.1mM, " (", df2$CI95.Tm_at_0.1mM, ")", sep = "")
 
 df.Meltwin = df.Meltwin %>%
   filter(Method == "2 Tm versus ln[Ct]") %>%
-  arrange(Sequence) %>%
-  filter(Sequence != "UAUAUAUA")
+  arrange(Sequence)
 
 H.MW = paste(df.Meltwin$dH, " (\u00B1", df.Meltwin$SE.dH, ")", sep = "")
 S.MW = paste(df.Meltwin$dS, " (\u00B1", df.Meltwin$SE.dS, ")", sep = "")
