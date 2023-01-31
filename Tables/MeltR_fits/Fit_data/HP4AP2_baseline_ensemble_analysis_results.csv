@@ -1,0 +1,4 @@
+"Method","dH","CI95.dH","dS","CI95.dS","dG","CI95.dG","Tm_at_0.1mM","CI95.Tm_at_0.1mM"
+"1 Individual fits",-40.64,"-41.92 to -39.49",-118.34,"-122.14 to -114.95",-3.95,"-4.05 to -3.85",70.25,"69.97 to 70.52"
+"2 Tm versus ln[Ct]",NA,"NA to NA",NA,"NA to NA",NA,"NA to NA",NA,"NA to NA"
+"3 Global fit",-39.65,"-42.16 to -37.81",-115.58,"-123.11 to -110.06",-3.8,"-4.05 to -3.66",70.25,"69.97 to 70.52"

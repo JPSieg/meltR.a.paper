@@ -9,7 +9,7 @@ library(MeltR)
 df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv")
 
 #?Helix.energy
-
+Helix.energy("GGCA","CGCC")
 Helix.energy("CGAAAGGU","ACCUUUCG")
 Helix.energy("CGUUGC", "GCAACG")
 Helix.energy("CUGAGUC", "GACUCAG")
@@ -28,8 +28,36 @@ Helix.energy("ACCGGU", "ACCGGU",
              GG.CC = -3.32,
              GC.GC = -3.44,
              Initiation = 4.63,
-             Term.AU = 0.55,)
-Helix.energy("ACCGGU", "ACCGGU",
+             Term.AU = 0.55)
+
+Helix.energy("AGCCGGCU", "AGCCGGCU",
+             AA.UU = -0.88,
+             AU.AU = -1.13,
+             UA.UA = -1.36,
+             CU.AG = -2.03,
+             CA.UG = -1.91,
+             GU.AC = -2.36,
+             GA.UC = -2.36,
+             CG.CG = -2.19,
+             GG.CC = -3.32,
+             GC.GC = -3.44,
+             Initiation = 4.63,
+             Term.AU = 0.55)
+
+Helix.energy("AGCCGGCU", "AGCCGGCU",
+             AA.UU = -0.88,
+             AU.AU = -1.13,
+             UA.UA = -1.36,
+             CU.AG = -2.03,
+             CA.UG = -1.91,
+             GU.AC = -2.36,
+             GA.UC = -2.36,
+             CG.CG = -2.19,
+             GG.CC = -3.32,
+             GC.GC = -3.44,
+             Initiation = 4.63,
+             Term.AU = 0.55)
+Helix.energy("UAUAUAUA", "UAUAUAUA",
              AA.UU = -6.3,
              AU.AU = -6.7,
              UA.UA = -12.7,
@@ -89,7 +117,7 @@ df.Meltwin$Known.dS = NA
 
 colnames(df.Meltwin)[1] = "Helix"
 
-df.Meltwin = df.Meltwin %>% filter(Helix != "UAUAUAUA")
+df.Meltwin = df.Meltwin
 
 for (i in 1:length(unique(df.Meltwin$Helix))){
   helix = unique(df.Meltwin$Helix)[i]
@@ -116,8 +144,8 @@ unique(df$Program)
 
 df$Program = factor(df$Program,
                     levels = c("MeltR\n1 Individual fits", "MeltWin\n1 individual fits",
-                               "MeltR\n2 Tm versus ln[Ct]", "MeltWin\n2 Tm versus ln[Ct]",
-                               "MeltR\n3 Global fit"))
+                               "MeltR\n3 Global fit",
+                               "MeltR\n2 Tm versus ln[Ct]", "MeltWin\n2 Tm versus ln[Ct]"))
 l.comp = list(c("MeltR\n1 Individual fits", "MeltWin\n1 individual fits"),
               c("MeltR\n2 Tm versus ln[Ct]", "MeltWin\n2 Tm versus ln[Ct]"),
               c("MeltR\n3 Global fit", "MeltWin\n1 individual fits"),
@@ -125,38 +153,26 @@ l.comp = list(c("MeltR\n1 Individual fits", "MeltWin\n1 individual fits"),
 
 length(unique(df$Helix))
 
-str(df)
+Mmodel = c()
 
-unique(df$Helix)
+for (i in 1:nrow(df)){
+  Mmodel[i] = df.known$Mmodel[which(df.known$Helix == df$Helix[i])]
+}
 
-df$Helix = factor(df$Helix,
-                  levels = unique(df$Helix),
-                  labels = c("5'-CGCGCG-3'\n3'-GCGCGC-5'", #1
-                             "5'-ACCGGU-3'\n3'-UGGCCA-5'", #2
-                             "5'-CCAUGG-3'\n3'-GGUACC-5'", #3
-                             "5'-GAUAUAUC-3'\n3'-CUAUAUAG-5'", #4
-                             "5'-GCAAUUGC-3'\n3'-CGUUAACG-5'", #5
-                             "5'-CGAAAGGU-3'\n3'-CGUUUCCA-5'", #6
-                             "5'-CUGAGUC-3'\n3'-GACUCAG-5'", #7
-                             "5'-CGUUGC-3'\n3'-GCAACG-5'", #8
-                             "F-CGAAAGGU-3'\nQ-CGUUUCCA-5'", #9
-                             "F-CUGAGUC-3'\nQ-GACUCAG-5'", #10
-                             "F-CGUUGC-3'\nQ-GCAACG-5'")) #11
-levels(df$Helix)
+df$Mmodel = Mmodel
+
+View(df)
 
 ggplot(df, aes(x = Program, y = 100*error.dG)) +
   geom_hline(yintercept =  0) +
-  geom_line(mapping = aes(group = Helix, color = Helix)) + 
+  geom_line(mapping = aes(group = Helix, color = Mmodel)) + 
   stat_compare_means(label.x = 2, label.y = 10) +
-  scale_color_manual(values = viridis::viridis(11)) +
-  scale_y_continuous(limits = c(-10, 10), breaks = c(-10, -7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10)) +
+  scale_color_manual(values = viridis::viridis(4)) +
+  #scale_y_continuous(limits = c(-10, 10), breaks = c(-10, -7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10)) +
   #stat_compare_means(comparisons = l.comp) +
-  geom_beeswarm(mapping = aes(color = Helix, shape = Helix)) +
-  scale_shape_manual(values = c(16, 17, 15, 8, 3,
-                                4, 11, 10, 13, 0,
-                                2)) +
+  geom_beeswarm(mapping = aes(color = Mmodel, shape = Mmodel)) +
   theme_classic() +
-  #scale_y_continuous(breaks = c(-10, -5, 0, 5,  10), limits = c(-10, 10)) +
+  scale_y_continuous(breaks = c(-50, -25, -10, -5, 0, 5,  10), limits = c(-50, 10)) +
   theme(axis.text.x = element_text(color = "black",
                                     angle = 45,
                                    hjust = 1),
@@ -170,3 +186,5 @@ ggsave("Figures/SI_Figure_4_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_
        scale = 2.5,
        height = 2,
        width = 4)
+
+write.csv(df, "Figures/SI_Figure_4_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/NN_Agreement.csv", row.names = F)

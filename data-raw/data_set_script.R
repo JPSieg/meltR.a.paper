@@ -21,7 +21,11 @@ for (i in 1:nrow(df.index)){
   start = which(gsub(",", "", Lines) == paste("CORRECTED ABSORBANCES @ ", df.index$Wavelength[i],".0 nm", sep = ""))
   Lines = Lines[(start+5):(length(Lines))]
   
-  Cell = as.integer(strsplit(df.index$Cell[i], split = " ")[[1]][2]) + 1 
+  if (df.index$Blank[i] == "None"){
+    Cell = as.integer(strsplit(df.index$Cell[i], split = " ")[[1]][2])
+  }else{
+    Cell = as.integer(strsplit(df.index$Cell[i], split = " ")[[1]][2]) + 1
+  }
   
   Temperature = c()
   Absorbance = c()
@@ -51,12 +55,17 @@ for (i in 1:nrow(df.index)){
 df = bind_rows(list.df)
 
 for (i in 1:length(list.df)){
-  df.bg = df %>%
-    filter(Experiment == list.df[[i]]$Experiment[1]) %>%
-    filter(File == list.df[[i]]$File[1]) %>%
-    filter(Cell == list.df[[i]]$Blank[1])
-  list.df[[i]]$Absorbance = list.df[[i]]$Absorbance - (df.bg$Absorbance*list.df[[i]]$Pathlength)
-  list.df[[i]]$Sample = i
+  print(i)
+  if (df.index$Blank[i] == "None"){
+    list.df[[i]]$Sample = i
+  }else{
+    df.bg = df %>%
+      filter(Experiment == list.df[[i]]$Experiment[1]) %>%
+      filter(File == list.df[[i]]$File[1]) %>%
+      filter(Cell == list.df[[i]]$Blank[1])
+    list.df[[i]]$Absorbance = list.df[[i]]$Absorbance - (df.bg$Absorbance*list.df[[i]]$Pathlength)
+    list.df[[i]]$Sample = i
+  }
 }
 
 df.Znosko = bind_rows(list.df) %>% filter(Absorbance != 0)
@@ -70,6 +79,7 @@ df.index = read.csv("data-raw/Bavilacqua_data_index.csv")
 list.df = {}
 
 for (i in 1:nrow(df.index)){
+  print(i)
   df = read.csv(paste("data-raw/", df.index$File[i], sep = ""))
   df$Experiment = df.index$Experiment[i]
   df$RNA = df.index$RNA[i]
@@ -102,6 +112,6 @@ usethis::use_data(df.absorbance, overwrite = T)
 
 ####Consolidate Meltwin data####
 
-df.Meltwin = read.csv("data-raw/Meltwin_fits.csv")
+df.Meltwin = read.csv("data-raw/Meltwin_fits.csv") %>% filter(Sequence != "GCCUUCGGGC")
 
 usethis::use_data(df.Meltwin, overwrite = T)

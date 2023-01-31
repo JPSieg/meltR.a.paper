@@ -84,8 +84,8 @@ PA = ggplot(df, aes(y = dH, ymin = dH - SE.dH, ymax = dH + SE.dH,
   #geom_text_repel(size = 2) +
   theme_classic() +
   coord_fixed() +
-  xlim(-85, -45) +
-  ylim(-85, -45) +
+  xlim(-85, -20) +
+  ylim(-85, -20) +
   theme(axis.text = element_text(color = "black"),
         legend.position = c(0.75, 0.2)) +
   xlab("MeltR Global fit \u0394H\u00B0 (kcal/mol)") +
@@ -103,8 +103,8 @@ PB = ggplot(df, aes(y = dS, ymin = dS - SE.dS, ymax = dS + SE.dS,
   #geom_text_repel(size = 2) +
   theme_classic() +
   coord_fixed() +
-  xlim(-250, -110) +
-  ylim(-250, -110)+
+  xlim(-250, -75) +
+  ylim(-250, -75)+
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
   xlab("MeltR Global fit \u0394S\u00B0 (cal/mol*K)") +
@@ -121,8 +121,8 @@ PC = ggplot(df, aes(x = dG, xmin = dG - SE.dG, xmax = dG + SE.dG,
   geom_errorbarh() +
   theme_classic() +
   coord_fixed() +
-  xlim(-11, -5) +
-  ylim(-11, -5)+
+  xlim(-11, 0) +
+  ylim(-11, 0)+
   theme(axis.text = element_text(color = "black"),
         legend.position = "none") +
   xlab("MeltR Global fit \u0394G\u00B037 (kcal/mol)") +
@@ -138,8 +138,8 @@ PD = ggplot(df, aes(y = Tm,
   geom_pointrange() +
   theme_classic() +
   coord_fixed() +
-  xlim(30, 70) +
-  ylim(30, 70)+
+  xlim(30, 80) +
+  ylim(30, 80)+
   theme(axis.text = element_text(color = "black"),
         legend.position = "none")  +
   ylab("MeltWin Tm at 0.1 mM (\u00B0C)") +
@@ -147,7 +147,7 @@ PD = ggplot(df, aes(y = Tm,
   scale_color_manual(values = viridis::viridis(2, end = 0.8),
                      name = "MeltWin\nmethod")
 
-####Percent error heat map####
+####Percent error heat map Bimolecular####
 
 df.MeltR = read.csv(File) 
 
@@ -157,6 +157,13 @@ Comparisons = list(c(1, 1),
                    c(2, 2),
                    c(3, 1),
                    c(3, 2))
+
+df.MeltR$MModel = NA
+df.Meltwin$MModel = NA
+df.MeltR$MModel[-which(df.MeltR$Helix %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Bimolecular"
+df.MeltR$MModel[which(df.MeltR$Helix %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Monomolecular"
+df.Meltwin$MModel[-which(df.Meltwin$Sequence %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Bimolecular"
+df.Meltwin$MModel[which(df.Meltwin$Sequence %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Monomolecular"
 
 list.df.comparison = {}
 
@@ -168,7 +175,7 @@ for (i in 1:length(Comparisons)){
   if (Comparisons[[i]][1] == 2){method = "2 Tm versus ln[Ct]"}
   if (Comparisons[[i]][1] == 3){method = "3 Global fit"}
   
-  df.method.MeltR = df.MeltR %>% filter(Method == method) %>% arrange(Helix)
+  df.method.MeltR = df.MeltR %>% filter(Method == method) %>% filter(MModel == "Bimolecular") %>% arrange(Helix) 
   
   colnames(df.Meltwin)
   unique(df.Meltwin$Method)
@@ -176,12 +183,12 @@ for (i in 1:length(Comparisons)){
   if (Comparisons[[i]][2] == 1){method = "1 individual fits"}
   if (Comparisons[[i]][2] == 2){method = "2 Tm versus ln[Ct]"}
   
-  df.method.Meltwin = df.Meltwin %>% filter(Method == method) %>% arrange(Sequence)
+  df.method.Meltwin = df.Meltwin %>% filter(Method == method) %>% filter(MModel == "Bimolecular")  %>% arrange(Sequence)
   
-  H = mean(100*abs(df.method.MeltR$dH - df.method.Meltwin$dH)/abs((df.method.MeltR$dH + df.method.Meltwin$dH)/2))
-  S = mean(100*abs(df.method.MeltR$dS - df.method.Meltwin$dS)/abs((df.method.MeltR$dS + df.method.Meltwin$dS)/2))
-  G = mean(100*abs(df.method.MeltR$dG - df.method.Meltwin$dG)/abs((df.method.MeltR$dG + df.method.Meltwin$dG)/2))
-  Tm = mean(100*abs(df.method.MeltR$Tm_at_0.1mM - df.method.Meltwin$Tm)/abs((df.method.MeltR$Tm_at_0.1mM + df.method.Meltwin$Tm)/2))
+  H = mean(100*abs(df.method.MeltR$dH - df.method.Meltwin$dH)/abs((df.method.MeltR$dH + df.method.Meltwin$dH)/2), na.rm = T)
+  S = mean(100*abs(df.method.MeltR$dS - df.method.Meltwin$dS)/abs((df.method.MeltR$dS + df.method.Meltwin$dS)/2), na.rm = T)
+  G = mean(100*abs(df.method.MeltR$dG - df.method.Meltwin$dG)/abs((df.method.MeltR$dG + df.method.Meltwin$dG)/2), na.rm = T)
+  Tm = mean(100*abs(df.method.MeltR$Tm_at_0.1mM - df.method.Meltwin$Tm)/abs((df.method.MeltR$Tm_at_0.1mM + df.method.Meltwin$Tm)/2), na.rm = T)
   
   df.H = data.frame("Parameter" =  "dH",
                     "MeltR.method" = Comparisons[[i]][1],
@@ -208,7 +215,7 @@ df.compare = bind_rows(list.df.comparison)
 
 list.files("Figures/Figure_3_Check_meltR.A/")
 
-write.csv(df.compare, "Figures/Figure_3_Check_meltR.A/MeltR_MeltWin_percent_error_by_method.csv")
+write.csv(df.compare, "Figures/Figure_3_Check_meltR.A/MeltR_MeltWin_percent_error_by_method_bimolecular.csv")
 
 head(df.compare)
 
@@ -220,13 +227,92 @@ df.compare$Parameter = factor(df.compare$Parameter,
 
 df.compare$Label = paste(round(df.compare$Error, digits = 1), "%", sep = "")
 
+
 P1 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
                        fill = Error, label = Label)) +
   geom_tile() +
   geom_text() +
   facet_wrap(~Parameter) +
   scale_y_continuous(breaks = c(1, 2)) +
-  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 5),
+  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 5.1),
+                       name = "%error") +
+  theme_classic() +
+  theme(axis.text = element_text(color = "black")) +
+  xlab("MeltR method") +
+  ylab("MeltWin method")
+
+####Percent error heat map Monomolecular####
+
+list.df.comparison = {}
+
+for (i in 1:length(Comparisons)){
+  colnames(df.MeltR)
+  unique(df.MeltR$Method)
+  
+  if (Comparisons[[i]][1] == 1){method = "1 Individual fits"}
+  if (Comparisons[[i]][1] == 2){method = "2 Tm versus ln[Ct]"}
+  if (Comparisons[[i]][1] == 3){method = "3 Global fit"}
+  
+  df.method.MeltR = df.MeltR %>% filter(Method == method) %>% filter(!MModel == "Bimolecular") %>% arrange(Helix) 
+  
+  colnames(df.Meltwin)
+  unique(df.Meltwin$Method)
+  
+  if (Comparisons[[i]][2] == 1){method = "1 individual fits"}
+  if (Comparisons[[i]][2] == 2){method = "2 Tm versus ln[Ct]"}
+  
+  df.method.Meltwin = df.Meltwin %>% filter(Method == method) %>% filter(!MModel == "Bimolecular")  %>% arrange(Sequence)
+  
+  H = mean(100*abs(df.method.MeltR$dH - df.method.Meltwin$dH)/abs((df.method.MeltR$dH + df.method.Meltwin$dH)/2), na.rm = T)
+  S = mean(100*abs(df.method.MeltR$dS - df.method.Meltwin$dS)/abs((df.method.MeltR$dS + df.method.Meltwin$dS)/2), na.rm = T)
+  G = mean(100*abs(df.method.MeltR$dG - df.method.Meltwin$dG)/abs((df.method.MeltR$dG + df.method.Meltwin$dG)/2), na.rm = T)
+  Tm = mean(100*abs(df.method.MeltR$Tm_at_0.1mM - df.method.Meltwin$Tm)/abs((df.method.MeltR$Tm_at_0.1mM + df.method.Meltwin$Tm)/2), na.rm = T)
+  
+  df.H = data.frame("Parameter" =  "dH",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = H)
+  df.S = data.frame("Parameter" =  "dS",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = S)
+  df.G = data.frame("Parameter" =  "dG",
+                    "MeltR.method" = Comparisons[[i]][1],
+                    "MeltWin.method" = Comparisons[[i]][2],
+                    "Error" = G)
+  df.Tm = data.frame("Parameter" =  "Tm",
+                     "MeltR.method" = Comparisons[[i]][1],
+                     "MeltWin.method" = Comparisons[[i]][2],
+                     "Error" = Tm)
+  
+  list.df.comparison[[i]] = bind_rows(df.H, df.S, df.G, df.Tm)
+}
+
+df.compare = bind_rows(list.df.comparison)
+
+
+list.files("Figures/Figure_3_Check_meltR.A/")
+
+write.csv(df.compare, "Figures/Figure_3_Check_meltR.A/MeltR_MeltWin_percent_error_by_method_monomolecular.csv")
+
+head(df.compare)
+
+#View(df.compare)
+
+df.compare$Parameter = factor(df.compare$Parameter,
+                              levels = c("dH", "dS", "dG", "Tm"),
+                              labels = c("\u0394H\u00B0", "\u0394S\u00B0", "\u0394G\u00B037", "Tm"))
+
+df.compare$Label = paste(round(df.compare$Error, digits = 1), "%", sep = "")
+
+
+P2 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
+                            fill = Error, label = Label)) +
+  geom_tile() +
+  geom_text() +
+  facet_wrap(~Parameter) +
+  scale_y_continuous(breaks = c(1, 2)) +
+  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 5.1),
                        name = "%error") +
   theme_classic() +
   theme(axis.text = element_text(color = "black")) +
@@ -235,15 +321,18 @@ P1 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
 
 ####Consolidate plots####
 
-P = plot_grid(PA, PB, PC, PD,
+P.bottom = plot_grid(PA, PB, PC, PD,
               labels = c("B", "C", "D", "F"), label_size = 16)  
 
-P = plot_grid(P1, P, ncol = 1,
+P.top = plot_grid(P1, P2)
+
+
+P = plot_grid(P.top, P.bottom, ncol = 1,
               labels = c("A", ""), label_size = 16,
               rel_heights = c(1, 3))
 
 list.files("Figures/Figure_3_Check_meltR.A/")
 
 ggsave("Figures/Figure_3_Check_meltR.A/Figure_3_Meltwin_comparison.svg", P,
-       width = 5.3, height = 6, units = "in", scale = 1.5, bg = "white")
+       width = 5.5, height = 6, units = "in", scale = 1.5, bg = "white")
 
