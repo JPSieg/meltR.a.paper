@@ -987,6 +987,178 @@ BL.fit = BLTrimmer(fit,
 list.df[[25]] = BL.fit$Ensemble.energies
 list.df[[25]]$Helix = df$RNA[1]
 
+####HP5_4_2####
+
+unique(df.absorbance$Experiment)
+
+df = df.absorbance %>%
+  filter(Experiment == "HP5_4_2") %>%
+  filter(Sample %in% c(208, 212, 214, 216, 218, 220)) #Remove samples with no lower baseline
+
+#?meltR.A
+
+head(df)
+
+ggplot(df, aes(x = Temperature, y = Absorbance)) +
+  facet_wrap(~Sample, scales = "free") +
+  geom_point() +
+  geom_vline(xintercept = c(40, 90))
+
+#View(df)
+
+unique(df$Sample)
+
+fit = meltR.A(df,
+              NucAcid = c("RNA", df$RNA[1]),
+              concT = 90,
+              wavelength = 260,
+              Mmodel = "Monomolecular.2State",
+              Save_results = "all",
+              file_path = "Tables/MeltR_fits/Fit_data",
+              file_prefix = "HP5_4_2",
+              fitTs = c(50, 95))
+
+#?BLTrimmer
+
+BL.fit = BLTrimmer(fit,
+                   n.combinations = 1000,
+                   Save_results = "all",
+                   file_path = "Tables/MeltR_fits/Fit_data",
+                   file_prefix = "HP5_4_2")
+
+
+list.df[[26]] = BL.fit$Ensemble.energies
+list.df[[26]]$Helix = df$RNA[1]
+
+####HP5_4_4####
+
+unique(df.absorbance$Experiment)
+
+df = df.absorbance %>%
+  filter(Experiment == "HP5_4_4") %>%
+  filter(Sample %in% c(223, 224, 2230, 231, 235, 236)) #Remove samples with no lower baseline
+
+#?meltR.A
+
+head(df)
+
+ggplot(df, aes(x = Temperature, y = Absorbance)) +
+  facet_wrap(~Sample, scales = "free") +
+  geom_point() +
+  geom_vline(xintercept = c(30, 90))
+
+#View(df)
+
+unique(df$Sample)
+
+fit = meltR.A(df,
+              NucAcid = c("RNA", df$RNA[1]),
+              concT = 90,
+              wavelength = 260,
+              Mmodel = "Monomolecular.2State",
+              Save_results = "all",
+              file_path = "Tables/MeltR_fits/Fit_data",
+              file_prefix = "HP5_4_4",
+              fitTs = c(30, 90))
+
+#?BLTrimmer
+
+BL.fit = BLTrimmer(fit,
+                   n.combinations = 1000,
+                   Save_results = "all",
+                   file_path = "Tables/MeltR_fits/Fit_data",
+                   file_prefix = "HP5_4_4")
+
+
+list.df[[27]] = BL.fit$Ensemble.energies
+list.df[[27]]$Helix = df$RNA[1]
+
+####HP5_4_5####
+
+unique(df.absorbance$Experiment)
+
+df = df.absorbance %>%
+  filter(Experiment == "HP5_4_5") %>%
+  filter(Sample %in% c(238, 239, 247, 250, 251, 252)) #Remove samples with no lower baseline
+
+#?meltR.A
+
+head(df)
+
+ggplot(df, aes(x = Temperature, y = Absorbance)) +
+  facet_wrap(~Sample, scales = "free") +
+  geom_point() +
+  geom_vline(xintercept = c(30, 90))
+
+#View(df)
+
+unique(df$Sample)
+
+fit = meltR.A(df,
+              NucAcid = c("RNA", df$RNA[1]),
+              concT = 90,
+              wavelength = 260,
+              Mmodel = "Monomolecular.2State",
+              Save_results = "all",
+              file_path = "Tables/MeltR_fits/Fit_data",
+              file_prefix = "HP5_4_5",
+              fitTs = c(30, 90))
+
+#?BLTrimmer
+
+BL.fit = BLTrimmer(fit,
+                   n.combinations = 1000,
+                   Save_results = "all",
+                   file_path = "Tables/MeltR_fits/Fit_data",
+                   file_prefix = "HP5_4_5")
+
+
+list.df[[28]] = BL.fit$Ensemble.energies
+list.df[[28]]$Helix = df$RNA[1]
+
+####HP5_4_9####
+
+unique(df.absorbance$Experiment)
+
+df = df.absorbance %>%
+  filter(Experiment == "HP5_4_9") %>%
+  filter(Sample %in% c(254, 258, 259, 260, 262, 266, 267, 268)) #Remove samples with no lower baseline
+
+#?meltR.A
+
+head(df)
+
+ggplot(df, aes(x = Temperature, y = Absorbance)) +
+  facet_wrap(~Sample, scales = "free") +
+  geom_point() +
+  geom_vline(xintercept = c(30, 90))
+
+#View(df)
+
+unique(df$Sample)
+
+fit = meltR.A(df,
+              NucAcid = c("RNA", df$RNA[1]),
+              concT = 90,
+              wavelength = 260,
+              Mmodel = "Monomolecular.2State",
+              Save_results = "all",
+              file_path = "Tables/MeltR_fits/Fit_data",
+              file_prefix = "HP5_4_9",
+              fitTs = c(30, 90))
+
+#?BLTrimmer
+
+BL.fit = BLTrimmer(fit,
+                   n.combinations = 1000,
+                   Save_results = "all",
+                   file_path = "Tables/MeltR_fits/Fit_data",
+                   file_prefix = "HP5_4_9")
+
+
+list.df[[29]] = BL.fit$Ensemble.energies
+list.df[[29]]$Helix = df$RNA[1]
+
 ####Consolidate results####
 
 df = bind_rows(list.df)
