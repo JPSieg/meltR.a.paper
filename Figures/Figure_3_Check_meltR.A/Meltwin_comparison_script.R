@@ -160,10 +160,10 @@ Comparisons = list(c(1, 1),
 
 df.MeltR$MModel = NA
 df.Meltwin$MModel = NA
-df.MeltR$MModel[-which(df.MeltR$Helix %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Bimolecular"
-df.MeltR$MModel[which(df.MeltR$Helix %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Monomolecular"
-df.Meltwin$MModel[-which(df.Meltwin$Sequence %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Bimolecular"
-df.Meltwin$MModel[which(df.Meltwin$Sequence %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC"))] = "Monomolecular"
+df.MeltR$MModel[-which(df.MeltR$Helix %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC", "GCACUGUUCGUGC", "CGAGGUAAGCUCG", "GACGCUCAACGUC", "CGUGUUCGUCACG"))] = "Bimolecular"
+df.MeltR$MModel[which(df.MeltR$Helix %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC", "GCACUGUUCGUGC", "CGAGGUAAGCUCG", "GACGCUCAACGUC", "CGUGUUCGUCACG"))] = "Monomolecular"
+df.Meltwin$MModel[-which(df.Meltwin$Sequence %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC", "GCACUGUUCGUGC", "CGAGGUAAGCUCG", "GACGCUCAACGUC", "CGUGUUCGUCACG"))] = "Bimolecular"
+df.Meltwin$MModel[which(df.Meltwin$Sequence %in% c("GGCUAACGGCC", "GCCGUGAGGC", "GCCUUCGGGC", "GCGGCAACGC", "GCUGAAAGGC", "GCUGAGAGGC", "GCCUAACGGC", "GCCUUUUAGGC", "GGCCACAGGCC", "GCCGUUUCGGC", "GGCGAGACGCC","GGCAAAAUGCC", "GCACUGUUCGUGC", "CGAGGUAAGCUCG", "GACGCUCAACGUC", "CGUGUUCGUCACG"))] = "Monomolecular"
 
 list.df.comparison = {}
 
@@ -234,7 +234,7 @@ P1 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
   geom_text() +
   facet_wrap(~Parameter) +
   scale_y_continuous(breaks = c(1, 2)) +
-  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 5.1),
+  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 7),
                        name = "%error") +
   theme_classic() +
   theme(axis.text = element_text(color = "black")) +
@@ -312,7 +312,7 @@ P2 = ggplot(df.compare, aes(x = MeltR.method, y = MeltWin.method,
   geom_text() +
   facet_wrap(~Parameter) +
   scale_y_continuous(breaks = c(1, 2)) +
-  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 5.1),
+  scale_fill_viridis_c(minor_breaks = 10, limits = c(0, 7),
                        name = "%error") +
   theme_classic() +
   theme(axis.text = element_text(color = "black")) +

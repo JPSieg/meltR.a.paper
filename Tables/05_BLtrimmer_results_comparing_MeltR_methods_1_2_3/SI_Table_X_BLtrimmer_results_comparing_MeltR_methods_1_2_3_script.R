@@ -39,10 +39,10 @@ helix = unique(df.MeltR$Helix)
 
 for (i in 1:length(Helix)){
   df = df.MeltR %>% filter(Helix == helix[i])
-  pH[i] = 100*abs(range(df %>% select(dH))[1]-range(df %>% select(dH))[2])/abs(mean((df %>% select(dH))[[1]]))
-  pS[i] = 100*abs(range(df %>% select(dS))[1]-range(df %>% select(dS))[2])/abs(mean((df %>% select(dS))[[1]]))
-  pG[i] = 100*abs(range(df %>% select(dG))[1]-range(df %>% select(dG))[2])/abs(mean((df %>% select(dG))[[1]]))
-  pTm[i] = 100*abs(range(df %>% select(Tm_at_0.1mM))[1]-range(df %>% select(Tm_at_0.1mM))[2])/abs(mean((df %>% select(Tm_at_0.1mM))[[1]]))
+  pH[i] = 100*abs(range(df %>% select(dH), na.rm = T)[1]-range(df %>% select(dH), na.rm = T)[2])/abs(mean(df$dH, na.rm = T))
+  pS[i] = 100*abs(range(df %>% select(dS), na.rm = T)[1]-range(df %>% select(dS), na.rm = T)[2])/abs(mean(df$dS, na.rm = T))
+  pG[i] = 100*abs(range(df %>% select(dG), na.rm = T)[1]-range(df %>% select(dG), na.rm = T)[2])/abs(mean(df$dG, na.rm = T))
+  pTm[i] = 100*abs(range(df %>% select(Tm_at_0.1mM), na.rm = T)[1]-range(df %>% select(Tm_at_0.1mM), na.rm = T)[2])/abs(mean(df$Tm_at_0.1mM, na.rm = T))
 }
 
 df.Table$pH = pH

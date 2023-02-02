@@ -1,6 +1,0 @@
-Program,Method,dH,Error dH,dS,Error dS,dG,Error dG,Tm_at_0.1mM
-Meltwin,2 Tm versus ln[Ct],-62.5,2.6,-194.2,9,-2.3,0.17,21.1
-Meltwin,1 individual fits,-63.1,2.2,-196.1,7.4,-2.27,0.09,21.1
-MeltR,1 Individual fits,-62.2,-65.3 to -59.67,-193.62,-204.39 to -184.89,-2.15,-2.33 to -1.91,20.36
-MeltR,2 Tm versus ln[Ct],-61.93,-65.15 to -59.06,-192.72,-203.75 to -182.83,-2.16,-2.36 to -1.96,20.35
-MeltR,3 Global fit,-64.24,-66.81 to -62.47,-200.36,-209.06 to -194.38,-2.1,-2.19 to -1.99,20.65

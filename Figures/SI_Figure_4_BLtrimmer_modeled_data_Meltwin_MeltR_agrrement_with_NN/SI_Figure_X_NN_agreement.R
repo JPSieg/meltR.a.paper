@@ -8,84 +8,6 @@ library(MeltR)
 
 df.MeltR = read.csv("Tables/MeltR_fits/Fit_results.csv")
 
-#?Helix.energy
-Helix.energy("GGCA","CGCC")
-Helix.energy("CGAAAGGU","ACCUUUCG")
-Helix.energy("CGUUGC", "GCAACG")
-Helix.energy("CUGAGUC", "GACUCAG")
-Helix.energy("CGAAAGGU","ACCUUUCG", F.Q = TRUE)
-Helix.energy("CGUUGC", "GCAACG", F.Q = TRUE)
-Helix.energy("CUGAGUC", "GACUCAG", F.Q = TRUE)
-Helix.energy("ACCGGU", "ACCGGU",
-             AA.UU = -0.88,
-             AU.AU = -1.13,
-             UA.UA = -1.36,
-             CU.AG = -2.03,
-             CA.UG = -1.91,
-             GU.AC = -2.36,
-             GA.UC = -2.36,
-             CG.CG = -2.19,
-             GG.CC = -3.32,
-             GC.GC = -3.44,
-             Initiation = 4.63,
-             Term.AU = 0.55)
-
-Helix.energy("AGCCGGCU", "AGCCGGCU",
-             AA.UU = -0.88,
-             AU.AU = -1.13,
-             UA.UA = -1.36,
-             CU.AG = -2.03,
-             CA.UG = -1.91,
-             GU.AC = -2.36,
-             GA.UC = -2.36,
-             CG.CG = -2.19,
-             GG.CC = -3.32,
-             GC.GC = -3.44,
-             Initiation = 4.63,
-             Term.AU = 0.55)
-
-Helix.energy("AGCCGGCU", "AGCCGGCU",
-             AA.UU = -0.88,
-             AU.AU = -1.13,
-             UA.UA = -1.36,
-             CU.AG = -2.03,
-             CA.UG = -1.91,
-             GU.AC = -2.36,
-             GA.UC = -2.36,
-             CG.CG = -2.19,
-             GG.CC = -3.32,
-             GC.GC = -3.44,
-             Initiation = 4.63,
-             Term.AU = 0.55)
-Helix.energy("UAUAUAUA", "UAUAUAUA",
-             AA.UU = -6.3,
-             AU.AU = -6.7,
-             UA.UA = -12.7,
-             CU.AG = -8.8,
-             CA.UG = -13.0,
-             GU.AC = -12.8,
-             GA.UC = -14.5,
-             CG.CG = -9.0,
-             GG.CC = -14.6,
-             GC.GC = -18.9,
-             Initiation = 5.3,
-             Term.AU = 2.8)
-
-Helix.energy("CGAAAGGU", "ACCUUUCG",
-             AA.UU = -6.82,
-             AU.AU = -9.38,
-             UA.UA = -7.69,
-             CU.AG = -10.48,
-             CA.UG = -10.44,
-             GU.AC = -11.40,
-             GA.UC = -12.44,
-             CG.CG = -10.64,
-             GG.CC = -13.39,
-             GC.GC = -14.88,
-             Initiation = 3.61,
-             Term.AU = 3.72,
-             FAMC.GBHQ1 = -13.07,
-             F.Q = TRUE)
 
 df.known = read.csv("Figures/Figure_3_Check_meltR.A/NN_numbers.csv")
 
@@ -170,7 +92,7 @@ ggplot(df, aes(x = Program, y = 100*error.dG)) +
   scale_color_manual(values = viridis::viridis(4)) +
   #scale_y_continuous(limits = c(-10, 10), breaks = c(-10, -7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10)) +
   #stat_compare_means(comparisons = l.comp) +
-  geom_beeswarm(mapping = aes(color = Mmodel, shape = Mmodel)) +
+  geom_beeswarm(mapping = aes(color = Mmodel, shape = Mmodel), size = 3) +
   theme_classic() +
   scale_y_continuous(breaks = c(-50, -25, -10, -5, 0, 5,  10), limits = c(-50, 10)) +
   theme(axis.text.x = element_text(color = "black",
@@ -184,7 +106,7 @@ list.files("Figures")
 
 ggsave("Figures/SI_Figure_4_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/SI_Figure_X_Meltwin_MeltR_agrrement_with_NN.svg",
        scale = 2.5,
-       height = 2,
+       height = 1.8,
        width = 4)
 
 write.csv(df, "Figures/SI_Figure_4_BLtrimmer_modeled_data_Meltwin_MeltR_agrrement_with_NN/NN_Agreement.csv", row.names = F)

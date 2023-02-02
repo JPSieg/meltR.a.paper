@@ -167,7 +167,7 @@ ggplot(df, aes(x = Temperature, y = Absorbance)) +
 
 fit = meltR.A(df,
               NucAcid = c("RNA", "GCAAUUGC"),
-              concT = 55,
+              concT = 90,
               wavelength = 280,
               Mmodel = "Homoduplex.2State",
               Save_results = "all",
