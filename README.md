@@ -44,7 +44,7 @@ Jacob P. Sieg1,2,*, Sebastian J. Arteaga3, Brent M. Znosko3, Philip C. Bevilacqu
  
  4. One can run scripts by opening them in R studio and running them line by line, as long as you don't change the project directory.
  
- 5. One can also remake fiures in a Bash terminal (For example the one you might use inside R studio) from the main directory by running.
+ 5. One can also remake figures in a Bash terminal (For example the one you might use inside R studio) from the main directory by running.
  
  ```{r}
  #Using Figure 3 as an example
