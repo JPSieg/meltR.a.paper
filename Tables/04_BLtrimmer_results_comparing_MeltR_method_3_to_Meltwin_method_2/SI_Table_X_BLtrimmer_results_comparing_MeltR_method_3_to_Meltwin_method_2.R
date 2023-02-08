@@ -32,10 +32,11 @@ Tm.MW2 = paste(df.Meltwin2$Tm)
 pH = 100*abs(df3$dH - df.Meltwin2$dH)/abs((df3$dH + df.Meltwin2$dH)/2)
 pS = 100*abs(df3$dS - df.Meltwin2$dS)/abs((df3$dS + df.Meltwin2$dS)/2)
 pG = 100*abs(df3$dG - df.Meltwin2$dG)/abs((df3$dG + df.Meltwin2$dG)/2)
+ddG = abs(df3$dG - df.Meltwin2$dG)
 pTm = 100*abs(df3$Tm_at_0.1mM - df.Meltwin2$Tm)/abs((df3$Tm_at_0.1mM + df.Meltwin2$Tm)/2)
 
 helix = unique(df.MeltR$Helix)
 
-df.Table = data.frame(Helix, H3, H.MW2, S3, S.MW2, G3, G.MW2, Tm3, Tm.MW2, pH, pS, pG, pTm)
+df.Table = data.frame(Helix, H3, H.MW2, S3, S.MW2, G3, G.MW2, Tm3, Tm.MW2, pH, pS, pG, pTm, ddG)
 
 write.csv(df.Table, "Tables/04_BLtrimmer_results_comparing_MeltR_method_3_to_Meltwin_method_2/04_BLtrimmer_results_comparing_MeltR_method_3_to_Meltwin_method_2.csv", row.names = FALSE)

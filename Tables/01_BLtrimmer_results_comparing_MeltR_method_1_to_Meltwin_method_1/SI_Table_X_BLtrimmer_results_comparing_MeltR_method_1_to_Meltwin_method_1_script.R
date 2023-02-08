@@ -31,9 +31,10 @@ Tm.MW = paste(df.Meltwin$Tm)
 pH = 100*abs(df1$dH - df.Meltwin$dH)/abs((df1$dH + df.Meltwin$dH)/2)
 pS = 100*abs(df1$dS - df.Meltwin$dS)/abs((df1$dS + df.Meltwin$dS)/2)
 pG = 100*abs(df1$dG - df.Meltwin$dG)/abs((df1$dG + df.Meltwin$dG)/2)
+ddG = abs(df1$dG - df.Meltwin$dG)
 pTm = 100*abs(df1$Tm_at_0.1mM - df.Meltwin$Tm)/abs((df1$Tm_at_0.1mM + df.Meltwin$Tm)/2)
 
-df.Table = data.frame(Helix, H1, H.MW, S1, S.MW, G1, G.MW, Tm1, Tm.MW, pH, pS, pG, pTm)
+df.Table = data.frame(Helix, H1, H.MW, S1, S.MW, G1, G.MW, Tm1, Tm.MW, pH, pS, pG, pTm, ddG)
 
 write.csv(df.Table, "Tables/01_BLtrimmer_results_comparing_MeltR_method_1_to_Meltwin_method_1/01_BLtrimmer_results_comparing_MeltR_method_1_to_Meltwin_method_1.csv", row.names = FALSE)
 

@@ -30,7 +30,7 @@ df.MeltR$error.dS = (df.MeltR$dS - 1000*df.MeltR$Known.dS)
 
 
 df1 = df.MeltR %>%
-  select(Helix, Method, error.dG, error.dH, error.dS)
+  select(Helix, Method, error.dG, error.dH, error.dS, dG, Known.dG)
 df1$Program = "MeltR"
 
 df.Meltwin$Known.dG = NA
@@ -55,7 +55,7 @@ df.Meltwin$error.dS = (df.Meltwin$dS - 1000*df.Meltwin$Known.dS)
 
 
 df2 = df.Meltwin %>%
-  select(Helix, Method, error.dG, error.dH, error.dS)
+  select(Helix, Method, error.dG, error.dH, error.dS, dG, Known.dG)
 df2$Program = "MeltWin"
 
 df = bind_rows(df1, df2)
